@@ -1,0 +1,19 @@
+.partner {
+  width: 100%;
+  background-color: var(--background-secondary-color);
+}
+.partner__list {
+  margin: 75px 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.partner__img {
+  object-fit: contain;
+  object-position: center;
+  width: 190px;
+  pointer-events: none;
+  user-select: none;
+}

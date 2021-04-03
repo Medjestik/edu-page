@@ -1,0 +1,23 @@
+.testimonials {
+  width: 100%;
+  background-color: var(--background-secondary-color);
+}
+.testimonials__title {
+  margin: 50px auto 0px;
+  max-width: 448px;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--title-color);
+}
+.testimonials__subtitle {
+  margin: 20px auto 0px;
+  max-width: 555px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--subtitle-color);
+}

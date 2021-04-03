@@ -1,0 +1,130 @@
+.slider {
+  margin: 60px auto 300px;
+  max-width: 1280px;
+}
+.slider__item {
+  width: 400px;
+  height: 230px;
+  border: 2px solid var(--border-card-color);
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+}
+.slider__person {
+  display: flex;
+  align-items: center;
+}
+.slider__person-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  object-position: center;
+  margin-right: 21px;
+  border-radius: 50%;
+}
+.slider__person-info {
+  display: flex;
+  flex-direction: column;
+}
+.slider__person-name {
+  margin: 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.15;
+  color: var(--title-color);
+}
+.slider__person-town {
+  margin: 5px 0px 0px 0px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.15;
+  color: var(--subtitle-color);
+}
+.slider__person-rating {
+  margin: 0px 0px 0px auto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--title-color);
+  padding-right: 35px;
+  position: relative;
+}
+.slider__person-rating::after {
+  content: url('../../images/star.png');
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 0px;
+  top: 3px;
+}
+.slider__item-text {
+  margin: 20px 0px 0px 0px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--title-color);
+}
+.rec.rec-carousel-wrapper {
+  position: relative;
+}
+.rec.rec-arrow {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--main-color);
+  background-color: inherit;
+  box-sizing: border-box;
+  color: var(--main-color);
+}
+.rec.rec-arrow:hover:enabled {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+.rec.rec-arrow:focus:enabled {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+.rec.rec-arrow:hover:disabled {
+  cursor: initial;
+  background-color: inherit;
+  border: 2px solid var(--border-card-color);
+  color: var(--border-card-color);
+}
+.rec.rec-arrow-left {
+  right: 100px;
+  bottom: -100px;
+}
+.rec.rec-arrow-right {
+  right: 20px;
+  bottom: -100px;
+}
+.rec.rec-pagination {
+  position: absolute;
+  left: 20px;
+  bottom: -80px;
+}
+.rec.rec-dot {
+  width: 15px;
+  height: 15px;
+  background-color: var(--border-card-color);
+  border: none;
+  box-shadow: none;
+}
+.rec.rec-dot:hover {
+  box-shadow: 0 0 1px 3px rgb(245 56 56 / 40%);
+}
+.rec.rec-dot:focus {
+  box-shadow: 0 0 1px 3px rgb(245 56 56 / 40%);
+}
+.rec.rec-dot_active {
+  width: 40px;
+  border-radius: 20px;
+  background-color: var(--main-color);
+}
