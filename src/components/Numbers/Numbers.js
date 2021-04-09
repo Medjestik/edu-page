@@ -1,32 +1,32 @@
 import React from 'react';
 import './Numbers.css';
-import user from '../../images/user.png';
-import location from '../../images/location.png';
-import server from '../../images/server.png';
+import experienceIcon from '../../images/experience-icon.png';
+import programsIcon from '../../images/programs-icon.png';
+import teacherIcon from '../../images/teacher-icon.png';
 
 function Numbers() {
   return (
     <section className="numbers container">
       <ul className="numbers__container">
         <li className="numbers__item">
-          <img className="numbers__img" src={user} alt="user"></img>
+          <img className="numbers__img" src={experienceIcon} alt="user"></img>
           <div className="numbers__item-description">
-            <span className="numbers__number">90+</span>
-            <p className="numbers__caption">Users</p>
+            <span className="numbers__number">11+</span>
+            <p className="numbers__caption">лет опыта проведения дистанционного&nbsp;обучения</p>
           </div>
         </li>
         <li className="numbers__item">
-        <img className="numbers__img" src={location} alt="location"></img>
+        <img className="numbers__img" src={programsIcon} alt="location"></img>
           <div className="numbers__item-description">
-            <span className="numbers__number">30+</span>
-            <p className="numbers__caption">Locations</p>
+            <span className="numbers__number">14+</span>
+            <p className="numbers__caption">программ и профилей набора&nbsp;абитуриентов</p>
           </div>
         </li>
         <li className="numbers__item">
-        <img className="numbers__img" src={server} alt="server"></img>
+        <img className="numbers__img" src={teacherIcon} alt="server"></img>
           <div className="numbers__item-description">
-            <span className="numbers__number">50+</span>
-            <p className="numbers__caption">Servers</p>
+            <span className="numbers__number">200+</span>
+            <p className="numbers__caption">тьюторов (преподавателей-&nbsp;практиков)</p>
           </div>
         </li>
       </ul>

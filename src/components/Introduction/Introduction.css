@@ -1,11 +1,12 @@
 .introduction {
-  margin: 50px auto 100px;
+  margin: 0px auto 100px;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .introduction__container {
-  max-width: 555px;
+  max-width: 700px;
   margin-right: 40px;
 }
 .introduction__title {
@@ -39,10 +40,10 @@
   border-radius: 10px;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 25px;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 1.4px;
   padding: 17.5px 77.5px;
   outline: none;
   transition: .3s ease-in-out;
@@ -53,11 +54,11 @@
   box-shadow: 0 40px 54px -15px rgba(245, 56, 56, 0.35);
 }
 .introduction__img {
-  width: 611px;
-  height: 382px;
+  width: 550px;
+  height: 550px;
+  
   object-position: center;
   object-fit: contain;
-  margin-right: -60px;
   pointer-events: none;
   user-select: none;
   overflow: hidden;

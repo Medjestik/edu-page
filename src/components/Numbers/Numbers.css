@@ -1,6 +1,6 @@
 .numbers {
   background-color: var(--background-main-color);
-  box-shadow: 0 40px 114px -15px rgba(13, 16, 37, .2);
+  box-shadow: 0 30px 114px 20px rgba(246, 246, 246, .4);
   width: 100%;
 }
 .numbers__container {
@@ -22,9 +22,9 @@
   border: none;
 }
 .numbers__img {
-  margin: 0px 36.5px 0px 0px;
-  width: 55px;
-  height: 55px;
+  margin: 0px 28px 0px 0px;
+  width: 85px;
+  height: 85px;
   pointer-events: none;
 }
 .numbers__item-description {
@@ -35,15 +35,16 @@
   margin: 0px;
   font-style: normal;
   font-weight: 900;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 28px;
+  line-height: 1.15;
   color: var(--title-color);
 }
 .numbers__caption {
   margin: 5px 0px 0px 0px;
+  max-width: 250px;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 22px;
   color: var(--subtitle-color);
 }

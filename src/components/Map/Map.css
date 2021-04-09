@@ -1,6 +1,6 @@
 .map {
   width: 100%;
-  background-color: var(--background-secondary-color);
+  background-color: var(--background-main-color);
 }
 .map__title {
   margin: 0px auto;
@@ -26,12 +26,12 @@
   font-weight: bold;
 }
 .map__img {
-  margin: 156px auto 0px;
-  width: 1060px;
-  height: 538px;
-  background-image: url('../../images/map.png');
+  margin: 0px auto;
+  width: 1280px;
+  height: 700px;
+  background-image: url('../../images/russia-map.png');
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   padding: 0px;
@@ -65,16 +65,434 @@
 }
 .map__point_city_moscow {
   position: absolute;
-  left: 625px;
-  top: 125px;
+  left: 204px;
+  top: 377px;
 }
-.map__point_city_rome {
+.map__point_city_moscow::after {
+  content: 'Москва';
   position: absolute;
-  left: 615px;
-  top: 250px;
+  min-width: 150px;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
 }
-.map__point_city_barcelona {
+.map__point_city_moscow:hover::after {
+  left: 7px;
+  top: 65px;
+  display: block;
+}
+.map__point_city_peterburg {
   position: absolute;
-  left: 500px;
-  top: 160px;
+  left: 195px;
+  top: 295px;
+}
+.map__point_city_peterburg::after {
+  content: 'Санкт-Петербург';
+  position: absolute;
+  min-width: 150px;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_peterburg:hover::after {
+  left: 50px;
+  top: 0px;
+  display: block;
+}
+.map__point_city_petrozavodsk {
+  position: absolute;
+  left: 245px;
+  top: 310px;
+}
+.map__point_city_petrozavodsk::after {
+  content: 'Петрозаводск';
+  position: absolute;
+  min-width: 150px;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_petrozavodsk:hover::after {
+  left: 30px;
+  top: 5px;
+  display: block;
+}
+.map__point_city_novosibirsk {
+  position: absolute;
+  left: 569px;
+  top: 572px;
+}
+.map__point_city_novosibirsk::after {
+  content: 'Новосибирск';
+  position: absolute;
+  min-width: 150px;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_novosibirsk:hover::after {
+  left: -23px;
+  top: 47px;
+  display: block;
+}
+.map__point_city_novgorod {
+  position: absolute;
+  left: 285px;
+  top: 380px;
+}
+.map__point_city_novgorod::after {
+  content: 'Нижний Новгород';
+  position: absolute;
+  min-width: 150px;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_novgorod:hover::after {
+  left: 0px;
+  top: -20px;
+  display: block;
+}
+.map__point_city_rostov {
+  position: absolute;
+  left: 115px;
+  top: 520px;
+}
+.map__point_city_rostov::after {
+  content: 'Ростов-на-Дону';
+  position: absolute;
+  min-width: 150px;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_rostov:hover::after {
+  left: -30px;
+  top: 45px;
+  display: block;
+}
+.map__point_city_krasnoyarsk {
+  position: absolute;
+  left: 677px;
+  top: 555px;
+}
+.map__point_city_krasnoyarsk::after {
+  content: 'Красноярск';
+  position: absolute;
+  min-width: 150px;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_krasnoyarsk:hover::after {
+  left: 50px;
+  top: 10px;
+  display: block;
+}
+.map__point_city_chelyabinsk {
+  position: absolute;
+  left: 370px;
+  top: 527px;
+}
+.map__point_city_chelyabinsk::after {
+  content: 'Челябинск';
+  position: absolute;
+  min-width: 150px;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_chelyabinsk:hover::after {
+  left: 50px;
+  top: 10px;
+  display: block;
+}
+.map__point_city_ekaterinburg {
+  position: absolute;
+  left: 383px;
+  top: 475px;
+}
+.map__point_city_ekaterinburg::after {
+  content: 'Екатеринбург';
+  position: absolute;
+  min-width: 150px;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_ekaterinburg:hover::after {
+  left: 50px;
+  top: 23px;
+  display: block;
+}
+.map__point_city_volgograd {
+  position: absolute;
+  left: 190px;
+  top: 540px;
+}
+.map__point_city_volgograd::after {
+  content: 'Волгоград';
+  position: absolute;
+  min-width: 150px;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_volgograd:hover::after {
+  left: 30px;
+  top: 5px;
+  display: block;
+}
+.map__point_city_saratov {
+  position: absolute;
+  left: 220px;
+  top: 520px;
+}
+.map__point_city_saratov::after {
+  content: 'Саратов';
+  position: absolute;
+  min-width: 150px;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_saratov:hover::after {
+  left: 30px;
+  top: 5px;
+  display: block;
+}
+.map__point_city_samara {
+  position: absolute;
+  left: 253px;
+  top: 496px;
+}
+.map__point_city_samara::after {
+  content: 'Самара';
+  position: absolute;
+  min-width: 150px;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_samara:hover::after {
+  left: 30px;
+  top: 5px;
+  display: block;
+}
+.map__point_city_kazan {
+  position: absolute;
+  left: 340px;
+  top: 395px;
+}
+.map__point_city_kazan::after {
+  content: 'Казань';
+  position: absolute;
+  min-width: 150px;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_kazan:hover::after {
+  left: 50px;
+  top: 10px;
+  display: block;
+}
+.map__point_city_habarovsk {
+  position: absolute;
+  right: 130px;
+  top: 540px;
+}
+.map__point_city_habarovsk::after {
+  content: 'Хабаровск';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_habarovsk:hover::after {
+  left: 50px;
+  top: 10px;
+  display: block;
+}
+.map__point_city_irkutsk {
+  position: absolute;
+  right: 470px;
+  top: 620px;
+}
+.map__point_city_irkutsk::after {
+  content: 'Иркутск';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_irkutsk:hover::after {
+  left: 30px;
+  top: 5px;
+  display: block;
+}
+.map__point_city_belgorod {
+  position: absolute;
+  left: 150px;
+  top: 470px;
+}
+.map__point_city_belgorod::after {
+  content: 'Белгород';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_belgorod:hover::after {
+  left: 30px;
+  top: 5px;
+  display: block;
+}
+.map__point_city_smolensk {
+  position: absolute;
+  left: 140px;
+  top: 400px;
+}
+.map__point_city_smolensk::after {
+  content: 'Смоленск';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  display: none;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+}
+.map__point_city_smolensk:hover::after {
+  left: -5px;
+  top: -25px;
+  display: block;
+}
+.map__point_city_norilsk {
+  position: absolute;
+  left: 620px;
+  top: 325px;
+}
+.map__point_city_norilsk::after {
+  content: 'Норильск';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+  display: none;
+}
+.map__point_city_norilsk:hover::after {
+  left: 30px;
+  top: 5px;
+  display: block;
+}
+.map__point_city_omsk {
+  position: absolute;
+  left: 490px;
+  top: 570px;
+}
+.map__point_city_omsk::after {
+  content: 'Омск';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+  display: none;
+}
+.map__point_city_omsk:hover::after {
+  left: 30px;
+  top: 5px;
+  display: block;
+}
+.map__point_city_tyumen {
+  position: absolute;
+  left: 430px;
+  top: 470px;
+}
+.map__point_city_tyumen::after {
+  content: 'Тюмень';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+  display: none;
+}
+.map__point_city_tyumen:hover::after {
+  left: 30px;
+  top: 5px;
+  display: block;
+}
+.map__point_city_abakan {
+  position: absolute;
+  left: 680px;
+  top: 600px;
+}
+.map__point_city_abakan::after {
+  content: 'Абакан';
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: var(--title-color);
+  display: none;
+}
+.map__point_city_abakan:hover::after {
+  left: 30px;
+  top: 5px;
+  display: block;
 }

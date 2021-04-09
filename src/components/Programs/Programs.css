@@ -1,0 +1,111 @@
+.programs {
+  width: 100%;
+}
+.programs__title {
+  margin: 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 70px;
+  text-align: center;
+  color: var(--title-color);
+}
+.programs__container {
+  margin: 50px 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.programs__item {
+  background-color: var(--white-color);
+  border: 1px solid var(--border-card-color);
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  transition: .3s ease-in-out;
+  width: 600px;
+}
+.programs__item:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  cursor: pointer;
+}
+.programs__item:hover .programs__item-name {
+  color: var(--white-color);
+}
+.programs__item:hover .programs__item-tag {
+  color: var(--white-color);
+  background-color: var(--main-color);;
+}
+.programs__item:hover .programs__item-form {
+  color: var(--white-color);
+}
+.programs__item:hover .programs__item-time {
+  color: var(--white-color);
+}
+.programs__item-top {
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+.programs__item-description {
+  display: flex;
+  flex-direction: column;
+}
+.programs__item-tag {
+  margin: 0px;
+  padding: 3px 5px;
+  color: var(--main-color);
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 20px;
+  pointer-events: none;
+  width: max-content;
+  background-color: rgba(236, 110, 102, 0.1);
+}
+.programs__item-name {
+  margin: 20px 0px 0px 0px;
+  font-size: 26px;
+  line-height: 1.15;
+  font-weight: bold;
+  max-width: 250px;
+  color: var(--title-color);
+}
+.programs__img {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url('../../images/programs/economic-color.png');
+}
+.programs__img_type_info {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url('../../images/programs/inform-color.png');
+}
+.programs__item-bottom {
+  border-top: 1px solid #E5E6ED;
+  padding: 10px 40px;
+  width: calc(100% - 80px);
+  max-height: 41px;
+}
+.programs__item-form {
+  padding-right: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0px;
+  border-right: 1px solid #E5E6ED;
+}
+.programs__item-time {
+  margin-left: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}

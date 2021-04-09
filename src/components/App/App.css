@@ -1,13 +1,13 @@
 .page {
-  --title-color: #0B132A;
+  --title-color: #404040;
   --subtitle-color: #4F5665;
   --white-color: #ffffff;
   --background-main-color: #ffffff;
   --background-secondary-color: #fafafa;
   --background-third-color: #F3F3F3;
-  --main-color: #e87267;
+  --main-color: #ec6e66;
   --main-light-color: #f59b91;
-  --secondary-color: #5668f5;
+  --secondary-color: #407bff;
   --secondary-light-color: #939bfe;
   --border-card-color: #DDDDDD;
   color: var(--subtitle-color);
@@ -27,6 +27,8 @@
   flex-direction: column;
 }
 .container {
-  max-width: 1140px;
+  max-width: 1280px;
   margin: 0px auto;
 }
+
+
