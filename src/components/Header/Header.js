@@ -15,7 +15,7 @@ function Header() {
           <li className="header__link"><Link to="testimonials" smooth={true} offset={0} duration= {500}>Testimonials</Link></li>
           <li className="header__link"><Link to="footer" smooth={true} offset={0} duration= {500}>Help</Link></li>
         </ul>
-        <button className="header__button" type="button">Sign Up</button>
+        <button className="header__button" type="button">Образовательный портал</button>
       </nav>
     </header>
   );

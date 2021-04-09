@@ -1,18 +1,17 @@
 import React from 'react';
 import './Introduction.css';
-import illustration from '../../images/first-illustration.png';
+import illustration from '../../images/introduction.gif';
 
 function Introduction() {
   return (
     <section className="introduction container" id="introduction">
       <div className="introduction__container">
-        <h1 className="introduction__title">Want anything to be easy with <span className="introduction__title_type_bolder">LaslesVPN.</span></h1>
+        <h1 className="introduction__title">Высшее<span className="introduction__title_type_bolder"> дистанционное </span>образование в ИЭФ РУТ&nbsp;(МИИТ)
+        </h1>
         <p className="introduction__subtitle">
-          Provide a network for all your needs with ease and fun using 
-          <span className="introduction__subtitle_type_bolder"> LaslesVPN </span> 
-          discover interesting features from us.
+          Начни обучаться из любой точки мира<span className="introduction__subtitle_type_bolder"> в удобном режиме. </span> 
         </p>
-        <button className="introduction__button">Get Started</button>
+        <button className="introduction__button">Оставить заявку</button>
       </div>
       <img className="introduction__img" src={illustration} alt="illustration"></img>
     </section>

@@ -1,6 +1,6 @@
 .partner {
   width: 100%;
-  background-color: var(--background-secondary-color);
+  background: linear-gradient(var(--white-color), var(--background-secondary-color));
 }
 .partner__list {
   margin: 75px 0px;
