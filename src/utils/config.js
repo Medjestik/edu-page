@@ -1,0 +1,1 @@
+export const STEP_COUNT_PROGRAMS = 4;
