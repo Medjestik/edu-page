@@ -1,16 +1,29 @@
 import React from 'react';
 import './About.css';
-import aboutUniversity from '../../images/about-university.gif';
+import aboutUniversity from '../../images/about.png';
 
 function About() {
   return (
-    <section className="about container" id="features">
-      <img className="about__img" src={aboutUniversity} alt="about university"></img>
-      <div className="about__info">
-        <h2 className="about__title">Институт экономики и финансов РУТ (МИИТ) сегодня</h2>
-        <p className="about__subtitle">Институт экономики и финансов РУТ (МИИТ) сегодня
-        Российский университет транспорта – <span className="about__subtitle_weight_bold">ведущий национальный транспортный вуз,</span> основанный в 1896 году, являющийся передовым межтранспортным и&nbsp;общетранспортным научно-образовательным центром.</p>
-        <p className="about__subtitle">В состав университета входит Институт экономики и финансов, организующий широкое внедрение<span className="about__subtitle_weight_bold"> современных образовательных технологий </span>в социально-экономическое образование всех уровней, разработку и использование методологии и технологии практико-ориентированного обучения в РУТ (МИИТ) и ОАО «РЖД».</p>
+    <section className="about" id="about">
+      <div className="about__container">
+
+        <div className="wave-about">
+          <svg className="wave-svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path className="wave-path_color_blue" d="M0.00,49.98 C152.64,97.20 318.56,91.28 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+          </svg>
+        </div>
+        
+        <div className="container about__flex-container">
+          <div className="about__img-container">
+            <img className="about__img" src={aboutUniversity} alt="about university"></img>
+          </div>
+          <div className="about__info">
+            <h2 className="about__title">Институт экономики и финансов РУТ (МИИТ) сегодня</h2>
+            <p className="about__subtitle">Институт экономики и финансов РУТ (МИИТ) сегодня
+            Российский университет транспорта – <span className="about__subtitle_weight_bold">ведущий национальный транспортный вуз,</span> основанный в 1896 году, являющийся передовым межтранспортным и&nbsp;общетранспортным научно-образовательным центром.</p>
+            <p className="about__subtitle">В состав университета входит Институт экономики и финансов, организующий широкое внедрение<span className="about__subtitle_weight_bold"> современных образовательных технологий </span>в социально-экономическое образование всех уровней, разработку и использование методологии и технологии практико-ориентированного обучения в РУТ (МИИТ) и ОАО «РЖД».</p>
+          </div>
+        </div>
       </div>
     </section>
   );

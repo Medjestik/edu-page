@@ -8,7 +8,7 @@
   justify-content: space-between;
 }
 .header__logo {
-  height: 100px;
+  height: 75px;
   object-fit: contain;
   object-position: center;
   pointer-events: none;

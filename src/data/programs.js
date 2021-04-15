@@ -2,6 +2,7 @@ const data = [
   {
     name: 'Экономика организаций и\u00A0отраслевых комплексов',
     profile: 'economic',
+    img: 'complex',
     level: 'mag',
     form: 'och',
     id: 7,
@@ -9,6 +10,7 @@ const data = [
   {
     name: 'Информационные системы в\u00A0бизнесе',
     profile: 'inform',
+    img: 'inform',
     level: 'bak',
     form: 'och',
     id: 2,
@@ -16,6 +18,7 @@ const data = [
   {
     name: 'Управление корпорациями, маркетинг и\u00A0форсайт',
     profile: 'management',
+    img: 'foresight',
     level: 'mag',
     form: 'oz',
     id: 19,
@@ -23,6 +26,7 @@ const data = [
   {
     name: 'Экономика предприятий и\u00A0организаций',
     profile: 'economic',
+    img: 'organization',
     level: 'bak',
     form: 'och',
     id: 1,
@@ -30,6 +34,7 @@ const data = [
   {
     name: 'Маркетинг и\u00A0процессная аналитика',
     profile: 'management',
+    img: 'analytics',
     level: 'bak',
     form: 'oz',
     id: 3,
@@ -37,6 +42,7 @@ const data = [
   {
     name: 'Управление проектами',
     profile: 'management',
+    img: 'project',
     level: 'bak',
     form: 'oz',
     id: 4,
@@ -44,6 +50,7 @@ const data = [
   {
     name: 'Управление технологическими инновациями',
     profile: 'management',
+    img: 'innovation',
     level: 'bak',
     form: 'oz',
     id: 5,
@@ -51,6 +58,7 @@ const data = [
   {
     name: 'Финансовая экономика',
     profile: 'economic',
+    img: 'finance',
     level: 'mag',
     form: 'och',
     id: 6,
@@ -58,6 +66,7 @@ const data = [
   {
     name: 'Экономика труда',
     profile: 'economic',
+    img: 'work',
     level: 'mag',
     form: 'och',
     id: 8,
@@ -65,6 +74,7 @@ const data = [
   {
     name: 'Управление корпорациями, маркетинг и\u00A0форсайт',
     profile: 'management',
+    img: 'foresight',
     level: 'mag',
     form: 'och',
     id: 9,
@@ -72,6 +82,7 @@ const data = [
   {
     name: 'Стратегическое управление персоналом',
     profile: 'personal',
+    img: 'personal',
     level: 'mag',
     form: 'och',
     id: 10,
@@ -79,6 +90,7 @@ const data = [
   {
     name: 'Управление стоимостью и\u00A0девелопмент в\u00A0инвестиционно-строительном комплексе',
     profile: 'economic',
+    img: 'development',
     level: 'mag',
     form: 'oz',
     id: 11,
@@ -86,6 +98,7 @@ const data = [
   {
     name: 'Экономика и\u00A0менеджмент транспортного комплекса арктических регионов',
     profile: 'economic',
+    img: 'arctic',
     level: 'mag',
     form: 'oz',
     id: 12,
@@ -93,6 +106,7 @@ const data = [
   {
     name: 'Финансовая экономика',
     profile: 'economic',
+    img: 'finance',
     level: 'mag',
     form: 'oz',
     id: 13,
@@ -100,6 +114,7 @@ const data = [
   {
     name: 'Экономика организаций и\u00A0отраслевых комплексов',
     profile: 'economic',
+    img: 'complex',
     level: 'mag',
     form: 'oz',
     id: 14,
@@ -107,6 +122,7 @@ const data = [
   {
     name: 'Финансовый учет и\u00A0налоговый аудит',
     profile: 'economic',
+    img: 'audit',
     level: 'mag',
     form: 'oz',
     id: 15,
@@ -114,6 +130,7 @@ const data = [
   {
     name: 'Экономика труда',
     profile: 'economic',
+    img: 'work',
     level: 'mag',
     form: 'oz',
     id: 16,
@@ -121,6 +138,7 @@ const data = [
   {
     name: 'Маркетинг-менеджмент пассажирского комплекса в\u00A0цифровой среде',
     profile: 'management',
+    img: 'digital',
     level: 'mag',
     form: 'oz',
     id: 17,
@@ -128,6 +146,7 @@ const data = [
   {
     name: 'Управление проектами и\u00A0программами в\u00A0инфраструктурном комплексе',
     profile: 'management',
+    img: 'infrastructure',
     level: 'mag',
     form: 'oz',
     id: 18,
@@ -135,6 +154,7 @@ const data = [
   {
     name: 'Организационный дизайн',
     profile: 'management',
+    img: 'design',
     level: 'mag',
     form: 'oz',
     id: 20,
@@ -142,6 +162,7 @@ const data = [
   {
     name: 'Управление имущественным комплексом',
     profile: 'management',
+    img: 'estate',
     level: 'mag',
     form: 'oz',
     id: 21,
@@ -149,6 +170,7 @@ const data = [
   {
     name: 'Управление социальным развитием организации',
     profile: 'management',
+    img: 'social',
     level: 'mag',
     form: 'oz',
     id: 22,
@@ -156,6 +178,7 @@ const data = [
   {
     name: 'Стратегическое управление персоналом',
     profile: 'personal',
+    img: 'personal',
     level: 'mag',
     form: 'oz',
     id: 23,

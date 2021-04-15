@@ -2,7 +2,7 @@ import React from 'react';
 import './Introduction.css';
 import illustration from '../../images/introduction.gif';
 
-function Introduction() {
+function Introduction({ onClickButton }) {
   return (
     <section className="introduction container" id="introduction">
       <div className="introduction__container">
@@ -11,7 +11,7 @@ function Introduction() {
         <p className="introduction__subtitle">
           Начни обучаться из любой точки мира<span className="introduction__subtitle_type_bolder"> в удобном режиме. </span> 
         </p>
-        <button className="introduction__button">Оставить заявку</button>
+        <button className="introduction__button" onClick={onClickButton} type="button">Оставить заявку</button>
       </div>
       <img className="introduction__img" src={illustration} alt="illustration"></img>
     </section>

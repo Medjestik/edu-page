@@ -9,6 +9,7 @@ import spotify from '../../images/spotify.png';
 function Partner() {
   return (
     <section className="partner">
+
       <div className="container">
         <ul className="partner__list">
           <li className="partner__item"><img className="partner__img" src={netflix} alt="netflix"></img></li>
@@ -17,7 +18,7 @@ function Partner() {
           <li className="partner__item"><img className="partner__img" src={discord} alt="discord"></img></li>
           <li className="partner__item"><img className="partner__img" src={spotify} alt="spotify"></img></li>
         </ul>
-        
+
       </div>
     </section>
   );

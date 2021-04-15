@@ -1,21 +1,46 @@
 .about {
-  margin: 150px auto 0px;
-  padding: 60px 0px 125px 0px;
+  margin: 100px auto 0px;
+  padding: 150px 0px 0px 0px;
+  width: 100%;
+}
+.about__container {
+  background-color: var(--secondary-color);
+  position: relative;
+  padding-bottom: 50px;
+}
+.about__flex-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.about__img-container {
+  position: relative;
+  margin: -180px 0px 0px 0px;
+}
 .about__img {
-  margin: -50px 0px 0px 0px;
   width: 520px;
   height: 520px;
   object-fit: contain;
   object-position: center;
   pointer-events: none;
+  z-index: 3;
+}
+.about__img-container::after {
+  content: url('../../images/about-dots.png');
+  transform: scale(.08);
+  position: absolute;
+  overflow: hidden;
+  bottom: -1230px;
+  left: -600px;
+  color: white;
+  z-index: 3;
 }
 .about__info {
   max-width: 600px;
+  margin-top: -50px;
+  padding-top: 50px;
+  z-index: 3;
 }
 .about__title {
   margin: 0px;
@@ -23,7 +48,7 @@
   font-weight: bold;
   font-size: 35px;
   line-height: 50px;
-  color: var(--title-color);
+  color: var(--white-color);
 }
 .about__subtitle {
   margin: 20px 0px 0px 0px;
@@ -31,8 +56,16 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
-  color: var(--subtitle-color);
+  color: var(--white-color);
 }
 .about__subtitle_weight_bold {
   font-weight: bold;
+}
+.wave-about {
+  position: absolute;
+  top: -150px;
+  left: 0px;
+  height: 150px;
+  width: 100%;
+  overflow: hidden;
 }

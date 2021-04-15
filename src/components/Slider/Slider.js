@@ -3,10 +3,14 @@ import Carousel from 'react-elastic-carousel';
 import './Slider.css';
 
 function Slider({ items }) {
-  
+
   return (
     <div className="slider">
-      <Carousel itemsToShow={3} enableAutoPlay={true} autoPlaySpeed={5000}>
+      <Carousel
+      itemsToShow={3} 
+      enableAutoPlay={true} 
+      autoPlaySpeed={10000}
+      >
         {items.map((item) => (
           <div className="slider__item" key={item.id}>
             <div className="slider__person">

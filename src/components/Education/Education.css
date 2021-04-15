@@ -1,0 +1,47 @@
+.education {
+  margin: 0px auto 0px;
+  padding: 60px 0px 100px 0px;
+  width: 100%;
+}
+.education__container {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(243, 243, 243, .2);
+  border-radius: 10px;
+}
+.education__img {
+  margin: -120px 0px 0px 100px;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  object-position: center;
+  pointer-events: none;
+  transform: scale(2);
+  overflow: hidden;
+}
+.education__info {
+  max-width: 600px;
+  padding: 40px;
+}
+.education__title {
+  margin: 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 50px;
+  color: var(--title-color);
+}
+.education__subtitle {
+  margin: 20px 0px 0px 0px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--subtitle-color);
+}
+.education__subtitle_weight_bold {
+  font-weight: bold;
+}

@@ -48,6 +48,7 @@
   outline: none;
   transition: .3s ease-in-out;
   position: relative;
+  z-index: 3;
 }
 .introduction__button:hover {
   cursor: pointer;

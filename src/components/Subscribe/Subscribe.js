@@ -1,15 +1,15 @@
 import React from 'react';
 import './Subscribe.css';
 
-function Subscribe() {
+function Subscribe({ onClickButton }) {
   return (
     <section className="subscribe">
       <div className="container subscribe__container">
         <div className="subscribe__info">
-          <h3 className="subscribe__title">Subscribe Now for Get Special Features!</h3>
-          <p className="subscribe__subtitle">Let's subscribe with us and find the fun.</p>
+          <h3 className="subscribe__title">Сделайте первый шаг к&nbsp;высшему образованию!</h3>
+          <p className="subscribe__subtitle">Прием документов на обучение с 20 июня.</p>
         </div>
-        <button className="subscribe__button" type="button">Subscribe Now</button>
+        <button className="subscribe__button" type="button" onClick={onClickButton}>Подать заявку</button>
        </div>
     </section>
   );

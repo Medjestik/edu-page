@@ -1,7 +1,8 @@
-.advantages{
+.advantages {
   width: 100%;
-  padding: 80px 0px 150px;
-  background: linear-gradient(var(--background-secondary-color) 80%, var(--background-main-color) 100%);
+  padding: 150px 0px 50px;
+  background-color: var(--background-secondary-color);
+  position: relative;
 }
 .advantages__title {
   margin: 0px;

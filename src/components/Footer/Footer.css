@@ -1,7 +1,8 @@
 .footer {
   width: 100%;
-  padding: 44px 0px 100px 0px;
+  padding: 0px 0px 100px 0px;
   background-color: var(--background-third-color);
+  position: relative;
 }
 .footer__container {
   display: flex;

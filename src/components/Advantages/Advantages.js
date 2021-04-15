@@ -9,7 +9,8 @@ import delay from '../../images/advantages/delay.png';
 
 function Advantages() {
   return (
-    <section className="advantages" id="price">
+    <section className="advantages" id="advantages">
+
       <div className="container">
         <h2 className="advantages__title">Преимущества</h2>
         <p className="advantages__subtitle">при обучение с использованием дистанционных образовательных технологий</p>
