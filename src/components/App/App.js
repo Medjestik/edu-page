@@ -65,8 +65,9 @@ function App() {
         onClickButton={openRequestPopup}  
       />
       <Education />
-      <Partner />
       <Testimonials />
+      <Partner />
+
       <Footer />
 
       <Popup           

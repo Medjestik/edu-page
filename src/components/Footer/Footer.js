@@ -11,7 +11,7 @@ function Footer() {
     <footer className="footer" id="footer">
       <div className="wave">
         <svg className="wave-svg" viewBox="0 0 500 150" preserveAspectRatio="none">
-          <path className="wave-path_color_third" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+          <path className="wave-path_color_blue" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
         </svg>
       </div>
 
@@ -24,36 +24,32 @@ function Footer() {
             <li className="footer__social-link"><img className="footer__social-img" src={twitter} alt="twitter"></img></li>
             <li className="footer__social-link"><img className="footer__social-img" src={instagram} alt="instagram"></img></li>
           </ul>
-          <span className="footer__copy">&copy;2020LaslesVPN</span>
+          <span className="footer__copy">&copy;2021 Все права защищены, ИЭФ РУТ (МИИТ)</span>
         </div>
         <ul className="footer__columns">
           <li className="footer__column">
-            <h4 className="footer__column-title">Product</h4>
+            <h4 className="footer__column-title">Навигация</h4>
             <ul className="footer__column-links">
-              <li className="footer__column-link">Download</li>
-              <li className="footer__column-link">Pricing</li>
-              <li className="footer__column-link">Locations</li>
-              <li className="footer__column-link">Server</li>
-              <li className="footer__column-link">Countries</li>
-              <li className="footer__column-link">Blog</li>
+              <li className="footer__column-link">О нас</li>
+              <li className="footer__column-link">Преимущества</li>
+              <li className="footer__column-link">Программы</li>
+              <li className="footer__column-link">Обучение</li>
+              <li className="footer__column-link">Отзывы</li>
             </ul>
           </li>
           <li className="footer__column">
-            <h4 className="footer__column-title">Engage</h4>
+            <h4 className="footer__column-title">Ресурсы</h4>
             <ul className="footer__column-links">
-              <li className="footer__column-link">LaslesVPN ?</li>
-              <li className="footer__column-link">FAQ</li>
-              <li className="footer__column-link">Tutorials</li>
-              <li className="footer__column-link">About Us</li>
-              <li className="footer__column-link">Privacy Policy</li>
-              <li className="footer__column-link">Terms of Service</li>
+              <li className="footer__column-link">Институт экономики и финансов</li>
+              <li className="footer__column-link">РУТ (МИИТ)</li>
+              <li className="footer__column-link">Образовательный портал</li>
             </ul>
           </li>
           <li className="footer__column">
-            <h4 className="footer__column-title">Earn Money</h4>
+            <h4 className="footer__column-title">Контакты</h4>
             <ul className="footer__column-links">
-              <li className="footer__column-link">Affiliate</li>
-              <li className="footer__column-link">Become Partner</li>
+              <li className="footer__column-link">priem@edu.emiit.ru</li>
+              <li className="footer__column-link">+7 (916) 333-13-11</li>
             </ul>
           </li>
         </ul>
