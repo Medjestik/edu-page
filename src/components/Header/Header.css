@@ -50,6 +50,7 @@
   padding: 13px 45px;
   outline: none;
   transition: .3s ease-in-out;
+  text-decoration: none;
 }
 .header__button:hover {
   cursor: pointer;

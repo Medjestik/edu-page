@@ -45,3 +45,9 @@
 .education__subtitle_weight_bold {
   font-weight: bold;
 }
+
+@media all and (max-width: 1400px) {
+  .education__img {
+    transform: scale(1.8);
+  }
+}

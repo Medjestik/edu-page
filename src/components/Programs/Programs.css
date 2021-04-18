@@ -456,3 +456,9 @@
   background-color: var(--secondary-color);
   color: var(--white-color);
 }
+
+@media all and (max-width: 1400px) {
+  .programs__item {
+    width: 580px;
+  }
+}

@@ -4,8 +4,7 @@
 }
 .subscribe__container {
   margin: -120px auto 30px;
-  max-width: 1140px;
-  width: 100%;
+  width: calc(100% - 140px);
   padding: 58px 70px;
   background-color: var(--white-color);
   border-radius: 10px;
