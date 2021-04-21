@@ -24,7 +24,7 @@ function Footer() {
             <ul className="footer__social">
               <li className="footer__social-link"><a href="https://vk.com/ief_rut" target="_blank" rel="noreferrer"><img className="footer__social-img" src={vk} alt="vkontacte"></img></a></li>
               <li className="footer__social-link"><a href="http://www.youtube.com/user/miitief" target="_blank" rel="noreferrer"><img className="footer__social-img" src={youtube} alt="youtube"></img></a></li>
-              <li className="footer__social-link"><a href="https://www.instagram.com/ief_miit/" target="_blank" rel="noreferrer"><img className="footer__social-img" src={instagram} alt="instagram"></img></a></li>
+              <li className="footer__social-link"><a href="https://www.instagram.com/ief_rut/?igshid=1bxmewdtjj3xi" target="_blank" rel="noreferrer"><img className="footer__social-img" src={instagram} alt="instagram"></img></a></li>
             </ul>
             <span className="footer__copy">&copy;2021 Все права защищены, ИЭФ РУТ (МИИТ)</span>
           </div>

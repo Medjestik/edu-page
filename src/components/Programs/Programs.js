@@ -42,7 +42,7 @@ const formOfStudy = (form) => {
   return 'Очная'
 }
 
-function Programs() {
+function Programs({ onDetail, showDetailPopup }) {
 
   const [programs, setPrograms] = React.useState(data);
   const [searchWord, setSearchWord] = React.useState('');
@@ -130,6 +130,11 @@ function Programs() {
     })
   }
 
+  function detailProgram(program) {
+    onDetail(program);
+    showDetailPopup();
+  }
+
   React.useEffect(() => { 
     setCountPrograms(STEP_COUNT_PROGRAMS);
   },[programs])
@@ -213,7 +218,7 @@ function Programs() {
                       <span className="programs__item-form">{formOfStudy(elem.form)}</span>
                       <span className="programs__item-time">{timeOfStudy(elem)}</span>
                     </div>
-                    <button className="programs__button-bottom" type="button">Подробнее</button>
+                    <button className="programs__button-bottom" type="button" onClick={() => detailProgram(elem)}>Подробнее</button>
 
                   </div>
                 </li>

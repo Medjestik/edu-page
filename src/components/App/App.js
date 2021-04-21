@@ -9,21 +9,66 @@ import Advantages from '../Advantages/Advantages.js';
 import Programs from '../Programs/Programs.js';
 import Subscribe from '../Subscribe/Subscribe.js';
 import Education from '../Education/Education.js';
-import Partner from '../Partner/Partner.js';
 import Testimonials from '../Testimonials/Testimonials.js';
+import Partner from '../Partner/Partner.js';
+import Request from '../Request/Request.js';
 import Footer from '../Footer/Footer.js';
 import Popup from '../Popup/Popup.js';
+import Detail from '../Detail/Detail.js';
+import * as api from '../../utils/api.js';
 
 function App() {
 
   const [isRequestPopupOpen, setIsRequestPopupOpen] = React.useState(false);
+  const [isDetailPopupOpen, setIsDetailPopupOpen] = React.useState(false);
+  const [currentProgram, setCurrentProgram] = React.useState({});
+  const [successRequest, setSuccessRequest] = React.useState(false);
+  const [errorRequest, setErrorRequest] = React.useState(false);
+  const [loadingRequest, setLoadingRequest] = React.useState(false);
 
   function closeAllPopups() {
     setIsRequestPopupOpen(false);
+    setIsDetailPopupOpen(false);
   }
 
   function openRequestPopup() {
     setIsRequestPopupOpen(true);
+    setSuccessRequest(false);
+    setErrorRequest(false);
+  }
+
+  function openSuccessPopup() {
+    closeAllPopups();
+    setIsRequestPopupOpen(true);
+    setSuccessRequest(true);
+    setErrorRequest(false);
+  }
+
+  function openErrorPopup() {
+    closeAllPopups();
+    setIsRequestPopupOpen(true);
+    setSuccessRequest(false);
+    setErrorRequest(true);
+  }
+
+  function openDetailPopup() {
+    setIsDetailPopupOpen(true);
+  }
+
+  function sendRequest(data) {
+    setLoadingRequest(true);
+    api.eduRequest({ data })
+    .then((res) => {
+      console.log(res);
+      openSuccessPopup();
+    })
+    .catch((err) => {
+      console.error(err);
+      openErrorPopup();
+    })
+    .finally(() => {
+      setLoadingRequest(false);
+    })
   }
 
   React.useEffect(() => { 
@@ -60,19 +105,38 @@ function App() {
         onClickButton={openRequestPopup}
       />
       <Advantages />
-      <Programs />
+      <Programs
+        onDetail={setCurrentProgram}
+        showDetailPopup={openDetailPopup}
+      />
       <Subscribe         
         onClickButton={openRequestPopup}  
       />
       <Education />
       <Testimonials />
       <Partner />
+      <Request 
+        sendRequest={sendRequest}
+        loadingRequest={loadingRequest}
+      />
 
       <Footer />
 
       <Popup           
         isOpen={isRequestPopupOpen}
-        onClose={closeAllPopups} 
+        onClose={closeAllPopups}
+        sendRequest={sendRequest}
+        successRequest={successRequest}
+        errorRequest={errorRequest}
+        loadingRequest={loadingRequest}
+      />
+
+      <Detail
+        program={currentProgram}      
+        isOpen={isDetailPopupOpen}
+        onClose={closeAllPopups}
+        sendRequest={sendRequest}
+        loadingRequest={loadingRequest}
       />
     </div>
   );
