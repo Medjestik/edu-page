@@ -21,7 +21,15 @@ function App() {
 
   const [isRequestPopupOpen, setIsRequestPopupOpen] = React.useState(false);
   const [isDetailPopupOpen, setIsDetailPopupOpen] = React.useState(false);
-  const [currentProgram, setCurrentProgram] = React.useState({});
+  const [currentProgram, setCurrentProgram] = React.useState({
+    name: '',
+    profile: '',
+    img: '',
+    level: '',
+    form: '',
+    id: 0,
+    course: [],
+  });
   const [successRequest, setSuccessRequest] = React.useState(false);
   const [errorRequest, setErrorRequest] = React.useState(false);
   const [loadingRequest, setLoadingRequest] = React.useState(false);
@@ -55,11 +63,10 @@ function App() {
     setIsDetailPopupOpen(true);
   }
 
-  function sendRequest(data) {
+  function sendRequest({ fullname, phone, text }) {
     setLoadingRequest(true);
-    api.eduRequest({ data })
-    .then((res) => {
-      console.log(res);
+    api.eduRequest({ fullname, phone, text })
+    .then(() => {
       openSuccessPopup();
     })
     .catch((err) => {
@@ -71,6 +78,16 @@ function App() {
     })
   }
 
+  React.useEffect(() => { 
+    api.getPrograms()
+    .then((res) => {
+      console.log(res);
+    })
+    .catch((err) => {
+      console.error(err);
+    })
+  },[])
+ 
   React.useEffect(() => { 
     function handleEscClose(e) {
       if (e.key === "Escape") {

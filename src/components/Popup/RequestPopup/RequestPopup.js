@@ -12,11 +12,7 @@ function RequestPopup({ isOpen, sendRequest, loadingRequest, }) {
  
   function handleSubmit(e) {
     e.preventDefault();
-    sendRequest({
-      fullname: name + ' ' + surname,
-      phone: phone,
-      text: comment,
-    })
+    sendRequest({ fullname: name + ' ' + surname, phone: phone, text: comment, })
   }
 
   function handleChangeName(e) {

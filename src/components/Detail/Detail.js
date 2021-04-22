@@ -68,10 +68,7 @@ function Popup({ program, isOpen, onClose, sendRequest, loadingRequest }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    sendRequest({
-      fullname: name,
-      phone: phone,
-    })
+    sendRequest({ fullname: name, phone: phone, text: '' })
   }
 
   function handleKeyDown(event) {
@@ -104,22 +101,26 @@ function Popup({ program, isOpen, onClose, sendRequest, loadingRequest }) {
         <div className="detail">
           <button className="detail__close-button" onClick={onClose} type="button" />
           <div className="detail__popup">
+          <span className="detail__tag">{directionOfProgram(program.profile)}</span>
             <div className="detail__container">
               <div className="detail__description">
-                <span className="detail__tag">{directionOfProgram(program.profile)}</span>
+
                 <p className="detail__specialization">Профиль</p>
-                <h2 className="detail__title">{program.name}</h2>
+                <h2 
+                className={`detail__title ${program.name.length > 32 ? "detail__title_type_large" : "detail__title_type_small"}`}>
+                  {program.name}
+                  </h2>
                 <ul className="detail__info-container">
                   <li className="detail__info">
-                    <span className="detail__info-item">Уровень&nbsp;образования</span>
+                    <span className="detail__info-item detail__info-item_weight_bold">Уровень&nbsp;образования</span>
                     <span className="detail__info-item">{levelOfStudy(program.level)}</span>
                   </li>
                   <li className="detail__info">
-                    <span className="detail__info-item">Форма&nbsp;обучения</span>
+                    <span className="detail__info-item detail__info-item_weight_bold">Форма&nbsp;обучения</span>
                     <span className="detail__info-item">{formOfStudy(program.form)}</span>
                   </li>
                   <li className="detail__info">
-                    <span className="detail__info-item">Срок&nbsp;обучения</span>
+                    <span className="detail__info-item detail__info-item_weight_bold">Срок&nbsp;обучения</span>
                     <span className="detail__info-item">{timeOfStudy(program)}</span>
                   </li>
                 </ul>

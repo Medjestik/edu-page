@@ -8,14 +8,25 @@ function handleResponse (res) {
     }
 }
 
-export const eduRequest = ({ data }) => {
-    return fetch(`${API_URL}/_wt/router/`, {
+export const eduRequest = ({ fullname, phone, text }) => {
+    return fetch(`${API_URL}/dot_requests/store`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ data })
+      body: JSON.stringify({ fullname, phone, text })
     })
     .then(res => handleResponse(res));
+};
+
+export const getPrograms = () => {
+  return fetch(`${API_URL}/dot_profiles/get_all`, {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+  })
+  .then(res => handleResponse(res));
 };

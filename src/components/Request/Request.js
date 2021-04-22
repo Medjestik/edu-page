@@ -24,11 +24,7 @@ function Request({ sendRequest, loadingRequest }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    sendRequest({
-      fullname: name,
-      phone: phone,
-      text: comment,
-    })
+    sendRequest({ fullname: name, phone: phone, text: comment, })
   }
 
   function handleKeyDown(event) {
