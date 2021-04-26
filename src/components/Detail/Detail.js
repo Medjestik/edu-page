@@ -75,7 +75,7 @@ function Popup({ program, isOpen, onClose, sendRequest, loadingRequest }) {
     if (event.keyCode === 13 && blockSubmitButton) {
         event.preventDefault();
     }
-  }  
+  }
 
   React.useEffect(() => {
     setName('');
@@ -163,11 +163,11 @@ function Popup({ program, isOpen, onClose, sendRequest, loadingRequest }) {
               <p className="detail__program-description"><span className="detail__program-description_weight_bold">Цели обучения: </span>{program.description}</p>
             }
             {
-              program.course && 
+              program.courses && 
 
               <ul className="detail__course-list">
                 {
-                program.course.map((course, index) => (
+                program.courses.map((course, index) => (
                   <li className="detail__course-item" key={index}>
                     <Accordion title={`${index + 1}-й курс`}>{course}</Accordion>
                   </li>

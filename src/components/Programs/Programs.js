@@ -1,6 +1,6 @@
 import React from 'react';
 import './Programs.css';
-import data from '../../data/programs.js';
+import Preloader from '../Preloader/Preloader.js';
 import { STEP_COUNT_PROGRAMS } from '../../utils/config.js';
 
 const directionOfProgram = (type) => {
@@ -42,9 +42,9 @@ const formOfStudy = (form) => {
   return 'Очная'
 }
 
-function Programs({ onDetail, showDetailPopup }) {
+function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms }) {
 
-  const [programs, setPrograms] = React.useState(data);
+  const [samplePrograms, setSamplePrograms] = React.useState([]);
   const [searchWord, setSearchWord] = React.useState('');
   const [countPrograms, setCountPrograms] = React.useState(STEP_COUNT_PROGRAMS);
   const [activeMenuButton, setActiveMenuButton] = React.useState({
@@ -62,7 +62,7 @@ function Programs({ onDetail, showDetailPopup }) {
   function changeActiveButton(type) {
     switch(type) {
       case "bak":
-        setPrograms(data.filter((item) => item.level === type));
+        setSamplePrograms(programs.filter((item) => item.level === type));
         setActiveMenuButton({
           all: false,
           bak: true,
@@ -72,7 +72,7 @@ function Programs({ onDetail, showDetailPopup }) {
         })
         break;
       case "mag":
-        setPrograms(data.filter((item) => item.level === type));
+        setSamplePrograms(programs.filter((item) => item.level === type));
         setActiveMenuButton({
           all: false,
           bak: false,
@@ -82,7 +82,7 @@ function Programs({ onDetail, showDetailPopup }) {
         })
         break;
       case "och":
-        setPrograms(data.filter((item) => item.form === type));
+        setSamplePrograms(programs.filter((item) => item.form === type));
         setActiveMenuButton({
           all: false,
           bak: false,
@@ -92,7 +92,7 @@ function Programs({ onDetail, showDetailPopup }) {
         })
         break;
       case "oz":
-        setPrograms(data.filter((item) => item.form === type));
+        setSamplePrograms(programs.filter((item) => item.form === type));
         setActiveMenuButton({
           all: false,
           bak: false,
@@ -102,7 +102,7 @@ function Programs({ onDetail, showDetailPopup }) {
         })
         break;
       default: 
-        setPrograms(data);
+        setSamplePrograms(programs);
         setActiveMenuButton({
           all: true,
           bak: false,
@@ -115,12 +115,13 @@ function Programs({ onDetail, showDetailPopup }) {
 
   function searchProgram(evt) {
     evt.preventDefault();
-    setPrograms(data.filter((item) => item.name.toLowerCase().includes(searchWord.toLowerCase())));
+    setSamplePrograms(programs.filter((item) => item.name.toLowerCase().includes(searchWord.toLowerCase())));
   }
 
   function changeInput(e) {
+    console.log(samplePrograms)
     setSearchWord(e.target.value);
-    setPrograms(data);
+    setSamplePrograms(programs);
     setActiveMenuButton({
       all: false,
       bak: false,
@@ -137,7 +138,11 @@ function Programs({ onDetail, showDetailPopup }) {
 
   React.useEffect(() => { 
     setCountPrograms(STEP_COUNT_PROGRAMS);
-  },[programs])
+  },[samplePrograms]);
+
+  React.useEffect(() => { 
+    setSamplePrograms(programs);
+  },[programs]);
 
   return (
     <section className="programs" id="programs">
@@ -202,13 +207,17 @@ function Programs({ onDetail, showDetailPopup }) {
             </form>
           </nav>
 
+
           <ul className="programs__item-container">
-            {
-              programs.slice(0, countPrograms).map((elem) => (
+            { isLoadingPrograms 
+            ?
+              <Preloader />
+            :
+              samplePrograms.slice(0, countPrograms).map((elem) => (
                 <li className="programs__item" key={elem.id}>
                   <div className="programs__item-top">
                     <div className="programs__item-description">
-                      <span className="programs__item-tag">{directionOfProgram(elem.profile)}</span>
+                      <span className="programs__item-tag">{directionOfProgram(elem.direction)}</span>
                       <p className="programs__item-name">{elem.name}</p>
                     </div>
                     <div className={`programs__img programs__img_type_${elem.img}`}></div>

@@ -21,6 +21,8 @@ function App() {
 
   const [isRequestPopupOpen, setIsRequestPopupOpen] = React.useState(false);
   const [isDetailPopupOpen, setIsDetailPopupOpen] = React.useState(false);
+  const [programs, setPrograms] = React.useState([]);
+  const [isLoadingPrograms, setIsLoadingPrograms] = React.useState(false);
   const [currentProgram, setCurrentProgram] = React.useState({
     name: '',
     profile: '',
@@ -79,14 +81,21 @@ function App() {
   }
 
   React.useEffect(() => { 
+    setIsLoadingPrograms(true);
     api.getPrograms()
     .then((res) => {
-      console.log(res);
+      res.map((item) => {
+        return item.name = item.name.replace('&nbsp;', '\u00A0');
+      })
+      setPrograms(res);
     })
     .catch((err) => {
       console.error(err);
     })
-  },[])
+    .finally(() => {
+      setIsLoadingPrograms(false);
+    })
+  }, [])
  
   React.useEffect(() => { 
     function handleEscClose(e) {
@@ -112,6 +121,7 @@ function App() {
   
   return (
     <div className="page">
+      
       <Header />
       <Introduction  
         onClickButton={openRequestPopup}
@@ -122,10 +132,17 @@ function App() {
         onClickButton={openRequestPopup}
       />
       <Advantages />
-      <Programs
+
+      { 
+        <Programs
+        programs={programs}
         onDetail={setCurrentProgram}
         showDetailPopup={openDetailPopup}
-      />
+        isLoadingPrograms={isLoadingPrograms}
+        />
+      }
+
+
       <Subscribe         
         onClickButton={openRequestPopup}  
       />
@@ -136,7 +153,6 @@ function App() {
         sendRequest={sendRequest}
         loadingRequest={loadingRequest}
       />
-
       <Footer />
 
       <Popup           
