@@ -10,7 +10,7 @@ function Footer() {
   
   return (
     <footer className="footer" id="footer">
-      <div className="wave">
+      <div className="wave footer__wave">
         <svg className="wave-svg" viewBox="0 0 500 150" preserveAspectRatio="none">
           <path className="wave-path_color_blue" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
         </svg>
@@ -20,13 +20,13 @@ function Footer() {
         <div className="footer__container">
           <div className="footer__info">
             <img className="footer__logo" src={logo} alt="logo"></img>
-            <p className="footer__caption"><span className="footer__caption_font_bold">Подпишитесь</span> на нас в социальных сетях!</p>
+            <p className="footer__caption"><span className="footer__caption_font_bold">Подпишитесь</span> на&nbsp;нас в&nbsp;социальных сетях!</p>
             <ul className="footer__social">
               <li className="footer__social-link"><a href="https://vk.com/ief_rut" target="_blank" rel="noreferrer"><img className="footer__social-img" src={vk} alt="vkontacte"></img></a></li>
               <li className="footer__social-link"><a href="http://www.youtube.com/user/miitief" target="_blank" rel="noreferrer"><img className="footer__social-img" src={youtube} alt="youtube"></img></a></li>
               <li className="footer__social-link"><a href="https://www.instagram.com/ief_rut/?igshid=1bxmewdtjj3xi" target="_blank" rel="noreferrer"><img className="footer__social-img" src={instagram} alt="instagram"></img></a></li>
             </ul>
-            <span className="footer__copy">&copy;2021 Все права защищены, ИЭФ РУТ (МИИТ)</span>
+            <span className="footer__copy">&copy;2021 Все права защищены, ИЭФ&nbsp;РУТ&nbsp;(МИИТ)</span>
           </div>
           <ul className="footer__columns">
             <li className="footer__column">

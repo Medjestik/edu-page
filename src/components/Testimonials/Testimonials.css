@@ -21,3 +21,18 @@
   text-align: center;
   color: var(--subtitle-color);
 }
+
+@media all and (max-width: 768px) {
+  .testimonials__title {
+    margin: 20px auto 0px;
+    max-width: 248px;
+    font-size: 20px;
+    line-height: 1.15;
+  }
+  .testimonials__subtitle {
+    margin: 10px auto 0px;
+    max-width: 255px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

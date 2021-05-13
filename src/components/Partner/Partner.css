@@ -19,3 +19,24 @@
   pointer-events: none;
   user-select: none;
 }
+
+@media all and (max-width: 1000px) {
+  .partner {
+    padding: 20px 0px 0px 0px;
+  }
+  .partner__img {
+    width: 140px;
+  }
+}
+
+@media all and (max-width: 760px) {
+  .partner__list {
+    margin: 20px 0px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .partner__img {
+    width: 200px;
+    margin-bottom: 30px;
+  }
+}

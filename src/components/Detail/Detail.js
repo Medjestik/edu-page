@@ -101,7 +101,7 @@ function Popup({ program, isOpen, onClose, sendRequest, loadingRequest }) {
         <div className="detail">
           <button className="detail__close-button" onClick={onClose} type="button" />
           <div className="detail__popup">
-          <span className="detail__tag">{directionOfProgram(program.profile)}</span>
+          <span className="detail__tag">{directionOfProgram(program.direction)}</span>
             <div className="detail__container">
               <div className="detail__description">
 

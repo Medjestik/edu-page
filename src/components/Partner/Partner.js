@@ -3,7 +3,6 @@ import './Partner.css';
 import netflix from '../../images/netflix.png';
 import reddit from '../../images/reddit.png';
 import amazon from '../../images/amazon.png';
-import discord from '../../images/discord.png';
 import spotify from '../../images/spotify.png';
 
 function Partner() {
@@ -15,7 +14,6 @@ function Partner() {
           <li className="partner__item"><img className="partner__img" src={netflix} alt="netflix"></img></li>
           <li className="partner__item"><img className="partner__img" src={reddit} alt="reddit"></img></li>
           <li className="partner__item"><img className="partner__img" src={amazon} alt="amazon"></img></li>
-          <li className="partner__item"><img className="partner__img" src={discord} alt="discord"></img></li>
           <li className="partner__item"><img className="partner__img" src={spotify} alt="spotify"></img></li>
         </ul>
 

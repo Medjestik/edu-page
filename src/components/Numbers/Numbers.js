@@ -27,7 +27,7 @@ function Numbers() {
           <img className="numbers__img" src={teacherIcon} alt="server"></img>
             <div className="numbers__item-description">
               <span className="numbers__number">200+</span>
-              <p className="numbers__caption">тьюторов (преподавателей-&nbsp;практиков)</p>
+              <p className="numbers__caption">тьюторов (преподавателей&nbsp;-&nbsp;практиков)</p>
             </div>
           </li>
         </ul>

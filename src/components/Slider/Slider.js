@@ -2,12 +2,27 @@ import React from 'react';
 import Carousel from 'react-elastic-carousel';
 import './Slider.css';
 
-function Slider({ items }) {
+function Slider({ items, windowWidth }) {
+
+  const [slideCount, setSlideCount] = React.useState(0);
+
+  React.useEffect(() => {
+    if (windowWidth < 1260) {
+      if (windowWidth < 768) {
+        setSlideCount(1)
+      } else {
+        setSlideCount(2)
+      }
+    } else {
+      setSlideCount(3)
+    }
+
+  }, [windowWidth])
 
   return (
     <div className="slider">
       <Carousel
-      itemsToShow={3} 
+      itemsToShow={slideCount} 
       enableAutoPlay={true} 
       autoPlaySpeed={10000}
       >

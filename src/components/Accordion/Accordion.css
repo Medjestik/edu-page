@@ -61,3 +61,14 @@
   color: var(--title-color);
   padding: 15px 15px;
 }
+
+@media all and (max-width: 1000px) {
+  .accordion__title {
+    padding: 8px 0px;
+    margin: 0px;
+    font-size: 14px;
+  }
+  .accordion__text {
+    font-size: 14px;
+  }
+}

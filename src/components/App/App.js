@@ -35,6 +35,19 @@ function App() {
   const [successRequest, setSuccessRequest] = React.useState(false);
   const [errorRequest, setErrorRequest] = React.useState(false);
   const [loadingRequest, setLoadingRequest] = React.useState(false);
+  const [windowWidth, setWindowWidth] = React.useState(0);
+
+  React.useEffect(() => {
+    function resizeWindow (evt) {
+      setWindowWidth(evt.target.innerWidth);
+    }
+
+    window.addEventListener('resize', resizeWindow);
+
+    return () => {
+      window.removeEventListener('resize', resizeWindow);
+    }
+  }, []);
 
   function closeAllPopups() {
     setIsRequestPopupOpen(false);
@@ -85,7 +98,7 @@ function App() {
     api.getPrograms()
     .then((res) => {
       res.map((item) => {
-        return item.name = item.name.replace('&nbsp;', '\u00A0');
+        return item.name = item.name.replaceAll('&nbsp;', '\u00A0');
       })
       setPrograms(res);
     })
@@ -122,7 +135,10 @@ function App() {
   return (
     <div className="page">
       
-      <Header />
+      <Header
+        windowWidth={windowWidth}
+        setWindowWidth={setWindowWidth}
+      />
       <Introduction  
         onClickButton={openRequestPopup}
       />
@@ -139,6 +155,7 @@ function App() {
         onDetail={setCurrentProgram}
         showDetailPopup={openDetailPopup}
         isLoadingPrograms={isLoadingPrograms}
+        windowWidth={windowWidth}
         />
       }
 
@@ -147,7 +164,9 @@ function App() {
         onClickButton={openRequestPopup}  
       />
       <Education />
-      <Testimonials />
+      <Testimonials
+        windowWidth={windowWidth}
+      />
       <Partner />
       <Request 
         sendRequest={sendRequest}

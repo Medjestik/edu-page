@@ -62,7 +62,7 @@ function RequestPopup({ isOpen, sendRequest, loadingRequest, }) {
       <figure className="popup__description">
         <img className="popup__img" src={contact} alt="contact us"></img>
         <figcaption className="popup__figcaption">
-          <h2 className="popup__title">Оставьте заявку, заполнив поля формы!</h2>
+          <h2 className="popup__title">Оставьте заявку, заполнив&nbsp;поля&nbsp;формы!</h2>
           <p className="popup__caption">Прием документов на обучение с&nbsp;20&nbsp;июня.</p>
           <p className="popup__caption">Укажите удобное для Вас время, чтобы специалист приемной комиссии с вами связался.</p>
         </figcaption>
