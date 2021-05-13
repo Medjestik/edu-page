@@ -155,7 +155,6 @@ function App() {
         onDetail={setCurrentProgram}
         showDetailPopup={openDetailPopup}
         isLoadingPrograms={isLoadingPrograms}
-        windowWidth={windowWidth}
       />
 
       <Subscribe         

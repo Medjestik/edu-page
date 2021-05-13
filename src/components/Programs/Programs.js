@@ -42,8 +42,9 @@ const formOfStudy = (form) => {
   return 'Очная'
 }
 
-function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms, windowWidth={windowWidth} }) {
+function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms }) {
 
+  const viewRef = React.createRef();
   const [samplePrograms, setSamplePrograms] = React.useState([]);
   const [searchWord, setSearchWord] = React.useState('');
   const [countPrograms, setCountPrograms] = React.useState(STEP_COUNT_PROGRAMS);
@@ -63,6 +64,7 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms, wind
     switch(type) {
       case "bak":
         setSamplePrograms(programs.filter((item) => item.level === type));
+        viewRef.current.scrollIntoView({ behavior: "smooth" });
         setActiveMenuButton({
           all: false,
           bak: true,
@@ -73,6 +75,7 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms, wind
         break;
       case "mag":
         setSamplePrograms(programs.filter((item) => item.level === type));
+        viewRef.current.scrollIntoView({ behavior: "smooth" });
         setActiveMenuButton({
           all: false,
           bak: false,
@@ -83,6 +86,7 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms, wind
         break;
       case "o":
         setSamplePrograms(programs.filter((item) => item.form === type));
+        viewRef.current.scrollIntoView({ behavior: "smooth" });
         setActiveMenuButton({
           all: false,
           bak: false,
@@ -93,6 +97,7 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms, wind
         break;
       case "oz":
         setSamplePrograms(programs.filter((item) => item.form === type));
+        viewRef.current.scrollIntoView({ behavior: "smooth" });
         setActiveMenuButton({
           all: false,
           bak: false,
@@ -103,6 +108,7 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms, wind
         break;
       default: 
         setSamplePrograms(programs);
+        viewRef.current.scrollIntoView({ behavior: "smooth" });
         setActiveMenuButton({
           all: true,
           bak: false,
@@ -119,7 +125,6 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms, wind
   }
 
   function changeInput(e) {
-    console.log(samplePrograms)
     setSearchWord(e.target.value);
     setSamplePrograms(programs);
     setActiveMenuButton({
@@ -208,7 +213,7 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms, wind
           </nav>
 
 
-          <ul className="programs__item-container">
+          <ul className="programs__item-container" ref={viewRef}>
             { isLoadingPrograms 
             ?
               <Preloader />
