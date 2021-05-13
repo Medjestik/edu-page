@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.dd266e6d.chunk.css",
-    "main.js": "./static/js/main.8992712b.chunk.js",
-    "main.js.map": "./static/js/main.8992712b.chunk.js.map",
+    "main.css": "./static/css/main.51d474df.chunk.css",
+    "main.js": "./static/js/main.d78d5c2b.chunk.js",
+    "main.js.map": "./static/js/main.d78d5c2b.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.14e36fc3.js",
     "runtime-main.js.map": "./static/js/runtime-main.14e36fc3.js.map",
     "static/js/2.85d92a32.chunk.js": "./static/js/2.85d92a32.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.7ad4a2fe.chunk.js": "./static/js/3.7ad4a2fe.chunk.js",
     "static/js/3.7ad4a2fe.chunk.js.map": "./static/js/3.7ad4a2fe.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.dd266e6d.chunk.css.map": "./static/css/main.dd266e6d.chunk.css.map",
+    "static/css/main.51d474df.chunk.css.map": "./static/css/main.51d474df.chunk.css.map",
     "static/js/2.85d92a32.chunk.js.LICENSE.txt": "./static/js/2.85d92a32.chunk.js.LICENSE.txt",
     "static/media/index.css": "./static/media/Raleway-Thin.48c8c234.eot",
     "static/media/About.css": "./static/media/about-dots.0f626a0f.png",
@@ -39,7 +39,7 @@
   "entrypoints": [
     "static/js/runtime-main.14e36fc3.js",
     "static/js/2.85d92a32.chunk.js",
-    "static/css/main.dd266e6d.chunk.css",
-    "static/js/main.8992712b.chunk.js"
+    "static/css/main.51d474df.chunk.css",
+    "static/js/main.d78d5c2b.chunk.js"
   ]
 }

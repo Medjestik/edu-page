@@ -60,11 +60,11 @@
     height: 60px;
   }
   .numbers__number {
-    font-size: 24px;
+    font-size: 28px;
   }
   .numbers__caption {
     max-width: 200px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.15;
   }
 }
@@ -94,7 +94,7 @@
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 760px) {
   .numbers__container {
     flex-direction: column;
   }
@@ -112,7 +112,7 @@
     text-align: left;
   }
   .numbers__caption {
-    margin: 7px 0px 0px 0px;
+    margin: 5px 0px 0px 0px;
     text-align: left;
   }
   .numbers__img {

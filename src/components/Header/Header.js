@@ -53,7 +53,7 @@ function Header({ windowWidth, setWindowWidth }) {
           <a className="mobile__link-button" href="http://edu.emiit.ru/" target="_blank" rel="noreferrer">Образовательный портал</a>
           <span className="mobile-menu__info">priem@edu.emiit.ru</span>
           <span className="mobile-menu__info">+7 (916) 333-13-11</span>
-          <span className="mobile-menu__info">Москва, Новосущевская 22 стр. 2, аудитория 3213</span>
+          <span className="mobile-menu__info">Москва, Новосущевская&nbsp;22 стр.&nbsp;2, аудитория&nbsp;3213</span>
         </div>
       </div>
     </div>

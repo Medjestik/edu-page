@@ -42,7 +42,7 @@ const formOfStudy = (form) => {
   return 'Очная'
 }
 
-function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms, windowWidth }) {
+function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms, windowWidth={windowWidth} }) {
 
   const [samplePrograms, setSamplePrograms] = React.useState([]);
   const [searchWord, setSearchWord] = React.useState('');
@@ -150,7 +150,6 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms, wind
         <div className="programs__container">
           <h2 className="programs__title">Программы обучения</h2>
           
-
 
           <ul className="programs__item-container">
             { isLoadingPrograms 

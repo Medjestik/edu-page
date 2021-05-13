@@ -22,7 +22,7 @@
   color: var(--subtitle-color);
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 760px) {
   .testimonials__title {
     margin: 20px auto 0px;
     max-width: 248px;

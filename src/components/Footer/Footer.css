@@ -155,7 +155,7 @@
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 760px) {
   .footer__container {
     display: flex;
     flex-direction: column-reverse;
@@ -180,5 +180,25 @@
   }
   .footer__caption {
     margin: 10px 0px 0px 0px;
+  }
+  .footer__column-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .footer__column-item {
+    margin: 0px 0px 10px 0px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .footer__column-link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .footer__caption {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .footer__info {
+    margin-right: 0px;
   }
 }

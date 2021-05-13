@@ -113,7 +113,7 @@
     font-size: 28px;
   }
   .introduction__subtitle {
-    font-size: 12px;
+    font-size: 14px;
   }
   .introduction__img {
     width: 300px;
@@ -121,14 +121,14 @@
     margin-right: 0px;
   }
   .introduction__button {
-    margin: 25px 0px 0px 0px;
-    padding: 10px 25px;
+    margin: 40px 0px 0px 0px;
+    padding: 15px 25px;
     font-size: 16px;
     line-height: 20px;
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 760px) {
   .introduction {
     margin: 0px auto 20px;
   }
@@ -136,10 +136,10 @@
     flex-direction: column-reverse;
   }
   .introduction__title {
-    font-size: 20px;
+    font-size: 24px;
   }
   .introduction__subtitle {
-    max-width: 220px;
+    max-width: 260px;
   }
   .introduction__description {
     display: flex;
