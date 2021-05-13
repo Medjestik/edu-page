@@ -1,6 +1,7 @@
 import React from 'react';
 import './Programs.css';
 import Preloader from '../Preloader/Preloader.js';
+import smoothscroll from 'smoothscroll-polyfill';
 import { STEP_COUNT_PROGRAMS } from '../../utils/config.js';
 
 const directionOfProgram = (type) => {
@@ -43,6 +44,8 @@ const formOfStudy = (form) => {
 }
 
 function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms }) {
+
+  smoothscroll.polyfill();
 
   const viewRef = React.createRef();
   const [samplePrograms, setSamplePrograms] = React.useState([]);
