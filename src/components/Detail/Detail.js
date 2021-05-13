@@ -52,7 +52,7 @@ const formOfStudy = (form) => {
   return 'Очная'
 }
 
-function Popup({ program, isOpen, onClose, sendRequest, loadingRequest }) {
+function Popup({ program, isOpen, onClose, sendRequest, loadingRequest, windowWidth, onClickButton }) {
 
   const [name, setName] = React.useState('');
   const [phone, setPhone] = React.useState('');
@@ -174,6 +174,10 @@ function Popup({ program, isOpen, onClose, sendRequest, loadingRequest }) {
                 ))
                 }
               </ul>
+            }
+            {
+              windowWidth < 760 &&
+              <button className="introduction__button detail__button" onClick={onClickButton} type="button">Оставить заявку</button>
             }
           </div>
         </div>

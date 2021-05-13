@@ -315,3 +315,51 @@
     font-size: 14px;
   }
 }
+
+@media all and (max-width: 760px) {
+  .detail {
+    margin: 7vh auto 0px;
+    max-height: 90vh;
+  }
+  .detail__popup {
+    padding: 20px 16px 14px
+  }
+  .detail__form {
+    display: none;
+  }
+  .detail__specialization {
+    font-size: 16px;
+  }
+  .detail__title {
+    margin: 8px 0px 15px;
+    font-size: 24px;
+  }
+  .detail__info-container {
+    flex-direction: column;
+  }
+  .detail__info {
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+  .detail__info-item {
+    font-size: 14px;
+  }
+  .detail__title_type_small {
+    max-width: max-content;
+  }
+  .detail__title_type_large {
+    max-width: max-content;
+  }
+  .detail__program-description {
+    margin-top: 15px;
+  }
+  .detail__button {
+    margin: 15px 0px 0px 0px;
+    width: 100%;
+  }
+  .detail__close-button {
+    width: 25px;
+    height: 25px;
+    top: -35px;
+  }
+}

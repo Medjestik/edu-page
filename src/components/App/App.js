@@ -58,6 +58,7 @@ function App() {
     setIsRequestPopupOpen(true);
     setSuccessRequest(false);
     setErrorRequest(false);
+    setIsDetailPopupOpen(false);
   }
 
   function openSuccessPopup() {
@@ -149,16 +150,13 @@ function App() {
       />
       <Advantages />
 
-      { 
-        <Programs
+      <Programs
         programs={programs}
         onDetail={setCurrentProgram}
         showDetailPopup={openDetailPopup}
         isLoadingPrograms={isLoadingPrograms}
         windowWidth={windowWidth}
-        />
-      }
-
+      />
 
       <Subscribe         
         onClickButton={openRequestPopup}  
@@ -181,6 +179,7 @@ function App() {
         successRequest={successRequest}
         errorRequest={errorRequest}
         loadingRequest={loadingRequest}
+        windowWidth={windowWidth}
       />
 
       <Detail
@@ -189,6 +188,8 @@ function App() {
         onClose={closeAllPopups}
         sendRequest={sendRequest}
         loadingRequest={loadingRequest}
+        windowWidth={windowWidth}
+        onClickButton={openRequestPopup}
       />
     </div>
   );

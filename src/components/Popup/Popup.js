@@ -4,7 +4,7 @@ import RequestPopup from './RequestPopup/RequestPopup.js';
 import SuccessPopup from './SuccessPopup/SuccessPopup.js';
 import ErrorPopup from './ErrorPopup/ErrorPopup.js';
 
-function Popup({ isOpen, onClose, sendRequest, successRequest, errorRequest, loadingRequest }) {
+function Popup({ isOpen, onClose, sendRequest, successRequest, errorRequest, loadingRequest, windowWidth }) {
 
   return (
     <section className={`popup ${isOpen ? "popup_opened" : ""}`}>
@@ -20,9 +20,10 @@ function Popup({ isOpen, onClose, sendRequest, successRequest, errorRequest, loa
           <ErrorPopup />
           :
           <RequestPopup
-          isOpen={isOpen}
-          sendRequest={sendRequest}
-          loadingRequest={loadingRequest}
+            isOpen={isOpen}
+            sendRequest={sendRequest}
+            loadingRequest={loadingRequest}
+            windowWidth={windowWidth}
           />
         }
         

@@ -576,4 +576,18 @@
     font-size: 14px;
     line-height: 18px;
   }
+  .programs__nav {
+    margin: 20px 0px 0px 0px;
+  }
+  .programs__menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .programs__menu-item {
+    margin: 0px 0px 10px 0px;
+  }
+  .programs__search {
+    margin-top: 10px;
+  }
 }

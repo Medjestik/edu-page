@@ -149,7 +149,64 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms, wind
       <div className="container">
         <div className="programs__container">
           <h2 className="programs__title">Программы обучения</h2>
-          
+          <nav className="programs__nav">
+            <ul className="programs__menu">
+              <li className="programs__menu-item">
+                <button 
+                  className={`programs__menu-button ${activeMenuButton.all ? "programs__menu-button_type_active" :""}`} id="all" type="button"
+                  onClick={(e) => changeActiveButton(e.target.id)}>
+                  Все
+                </button>
+              </li>
+              <li className="programs__menu-item">
+                <button 
+                  className={`programs__menu-button ${activeMenuButton.bak ? "programs__menu-button_type_active" :""}`} id="bak" type="button"
+                  onClick={(e) => changeActiveButton(e.target.id)}>
+                  Бакалавриат
+                </button>
+              </li>
+              <li className="programs__menu-item">
+                <button 
+                  className={`programs__menu-button ${activeMenuButton.mag ? "programs__menu-button_type_active" :""}`} id="mag" type="button"
+                  onClick={(e) => changeActiveButton(e.target.id)}>
+                  Магистратура
+                </button>
+              </li>
+              <li className="programs__menu-item">
+                <button 
+                  className={`programs__menu-button ${activeMenuButton.och ? "programs__menu-button_type_active" :""}`} id="o" type="button"
+                  onClick={(e) => changeActiveButton(e.target.id)}>
+                  Очные
+                </button>
+              </li>
+              <li className="programs__menu-item">
+                <button 
+                  className={`programs__menu-button ${activeMenuButton.oz ? "programs__menu-button_type_active" :""}`} id="oz" type="button"
+                  onClick={(e) => changeActiveButton(e.target.id)}>
+                  Очно-заочные
+                </button>
+              </li>
+            </ul>
+
+            <form className="programs__search" name="search-programs" action="#" noValidate onSubmit={searchProgram}>
+              <input 
+              className="programs__search-input"
+              onChange={(e) => changeInput(e)}
+              placeholder="Поиск по названию"
+              type="text" 
+              id="search"
+              name="search"
+              minLength="2" 
+              maxLength="40" 
+              required
+              autoComplete="off"
+              pattern="[А-Яа-яЁё -]{1,}"
+              >
+              </input>
+              <button className="programs__search-button" type="submit"></button>
+            </form>
+          </nav>
+
 
           <ul className="programs__item-container">
             { isLoadingPrograms 

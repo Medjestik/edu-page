@@ -2,7 +2,7 @@ import React from 'react';
 import contact from '../../../images/contact.png';
 import InputMask from 'react-input-mask';
 
-function RequestPopup({ isOpen, sendRequest, loadingRequest, }) {
+function RequestPopup({ isOpen, sendRequest, loadingRequest, windowWidth }) {
 
   const [name, setName] = React.useState('');
   const [surname, setSurname] = React.useState('');
@@ -101,7 +101,7 @@ function RequestPopup({ isOpen, sendRequest, loadingRequest, }) {
         <div className="popup__form-line">
           <InputMask mask="+7 (999) 999-99-99" 
             className="popup__input"
-            placeholder="Номер телефона"
+            placeholder={`${windowWidth > 350 ? 'Номер телефона' : 'Номер'}`}
             type="tel"
             id="telephone"
             name="telephone"
@@ -113,7 +113,7 @@ function RequestPopup({ isOpen, sendRequest, loadingRequest, }) {
           <span className={`popup__form-line-separator ${phone.replace(/-|_/g, "").length < 16 ? "popup__form-line-separator_type_error" : ""}`}></span>
           <input 
             className="popup__input"
-            placeholder="Время для звонка или комментарий"
+            placeholder={`${windowWidth > 768 ? 'Время для звонка или комментарий' : 'Комментарий'}`}
             type="text"
             id="comment"
             name="comment"
