@@ -243,7 +243,7 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms }) {
             }
           </ul>
           {
-            (programs.length > countPrograms)
+            (samplePrograms.length > countPrograms)
             &&
             <button className="programs__btn-add" onClick={showMorePrograms}>Показать ещё</button>
           }

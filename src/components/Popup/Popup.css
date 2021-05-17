@@ -33,7 +33,6 @@
   background-color: var(--secondary-color);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
   border-radius: 16px;
-  overflow-y: auto;
 }
 .popup__container::-webkit-scrollbar {
   width: 10px;
@@ -273,6 +272,7 @@
   .popup__close-button {
     right: 0px;
     top: -35px;
+    
   }
   .popup__img {
     width: 200px;
@@ -296,7 +296,7 @@
     height: 30px;
   }
   .popup__submit-button {
-    margin: 20px auto 0px;
+    margin: 20px auto 20px;
     font-size: 16px;
     line-height: 20px;
     padding: 12px 45px;
@@ -307,6 +307,7 @@
   .popup__container {
     margin: 3vh 16px 0px;
     padding: 12px 16px;
+    overflow-y: auto;
   }
   .popup__description {
     flex-direction: column;
