@@ -15,8 +15,8 @@
   margin-right: 30px;
 }
 .footer__logo {
-  width: 150px;
-  object-position: center;
+  height: 70px;
+  object-position: left;
   object-fit: contain;
 }
 .footer__caption {
@@ -115,7 +115,7 @@
 
 @media all and (max-width: 1250px) {
   .footer__logo {
-    width: 100px;
+    height: 60px;
   }
   .footer__caption {
     font-size: 14px;

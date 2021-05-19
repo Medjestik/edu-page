@@ -8,7 +8,7 @@
   justify-content: space-between;
 }
 .header__logo {
-  height: 75px;
+  height: 60px;
   object-fit: contain;
   object-position: center;
   pointer-events: none;
@@ -21,7 +21,7 @@
 }
 .header__link {
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 16px;
   line-height: 19px;
   color: var(--subtitle-color);

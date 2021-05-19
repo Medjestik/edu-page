@@ -1,7 +1,8 @@
 import React from 'react';
 import './Header.css';
 import { Link } from "react-scroll";
-import logo from '../../images/logo.png';
+import logoColor from '../../images/rut-logo-color.png';
+import logoWhite from '../../images/rut-logo-white.png';
 
 function Header({ windowWidth, setWindowWidth }) {
 
@@ -39,7 +40,7 @@ function Header({ windowWidth, setWindowWidth }) {
 
       <div className="mobile-menu__container">
         <div className="mobile-menu__top-bar">
-          <img className="header__logo" src={logo} alt="logo"></img>
+          <img className="header__logo" src={logoWhite} alt="logo"></img>
           <button className="mobile-menu__close-button" type="button" onClick={() => setShowMenu(false)}></button>
         </div>
         <div className="mobile-menu__main-bar">
@@ -64,14 +65,14 @@ function Header({ windowWidth, setWindowWidth }) {
     if (width > 1000) { 
       return (
         <nav className="header__nav">
-          <img className="header__logo" src={logo} alt="logo"></img>
+          <img className="header__logo" src={logoColor} alt="logo"></img>
           {navMenu}
         </nav>
       )
     } else {
       return (
         <nav className="header__nav">
-          <img className="header__logo" src={logo} alt="logo"></img>
+          <img className="header__logo" src={logoColor} alt="logo"></img>
           <button className={`header__hamburger-button ${showMenu ? 'header__hamburger-button_type_show' : ''}`} type="button" onClick={() => setShowMenu(true)}></button>
           {mobileMenu}
         </nav>

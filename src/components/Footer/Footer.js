@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from "react-scroll";
-import logo from '../../images/logo.png';
+import logoWhite from '../../images/rut-logo-white.png';
 import vk from '../../images/vk.png';
 import youtube from '../../images/youtube.png';
 import instagram from '../../images/instagram.png';
@@ -19,7 +19,7 @@ function Footer() {
       <div className="container">
         <div className="footer__container">
           <div className="footer__info">
-            <img className="footer__logo" src={logo} alt="logo"></img>
+            <img className="footer__logo" src={logoWhite} alt="logo"></img>
             <p className="footer__caption"><span className="footer__caption_font_bold">Подпишитесь</span> на&nbsp;нас в&nbsp;социальных сетях!</p>
             <ul className="footer__social">
               <li className="footer__social-link"><a href="https://vk.com/ief_rut" target="_blank" rel="noreferrer"><img className="footer__social-img" src={vk} alt="vkontacte"></img></a></li>
