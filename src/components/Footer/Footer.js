@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from "react-scroll";
-import logoWhite from '../../images/rut-logo-white.png';
+import logoWhite from '../../images/logo-rut-white.png';
 import vk from '../../images/vk.png';
 import youtube from '../../images/youtube.png';
 import instagram from '../../images/instagram.png';

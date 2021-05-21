@@ -1,8 +1,8 @@
 import React from 'react';
 import './Header.css';
 import { Link } from "react-scroll";
-import logoColor from '../../images/rut-logo-color.png';
-import logoWhite from '../../images/rut-logo-white.png';
+import logoColor from '../../images/logo-rut-color.png';
+import logoWhite from '../../images/logo-rut-white.png';
 
 function Header({ windowWidth, setWindowWidth }) {
 

@@ -8,7 +8,7 @@ function Introduction({ onClickButton }) {
       <div className="container">
         <div className="introduction__container">
           <div className="introduction__description">
-            <h1 className="introduction__title">Высшее<span className="introduction__title_type_bolder"> дистанционное </span>образование в ИЭФ РУТ&nbsp;(МИИТ)
+            <h1 className="introduction__title">Высшее&nbsp;образование в&nbsp;ИЭФ&nbsp;РУТ&nbsp;(МИИТ)<span className="introduction__title_type_bolder"> дистанционно </span>
             </h1>
             <p className="introduction__subtitle">
               Начни обучаться из любой точки мира<span className="introduction__subtitle_type_bolder"> в удобном режиме. </span> 

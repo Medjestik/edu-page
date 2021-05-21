@@ -24,6 +24,8 @@
   object-position: center;
   margin-right: 21px;
   border-radius: 50%;
+  pointer-events: none;
+  user-select: none;
 }
 .slider__person-info {
   display: flex;

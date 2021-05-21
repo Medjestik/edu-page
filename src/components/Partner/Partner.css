@@ -4,6 +4,15 @@
   position: relative;
   padding: 50px 0px 0px 0px;
 }
+.partner__title {
+  margin: 20px auto 0px;
+  max-width: 648px;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--title-color);
+}
 .partner__list {
   margin: 75px 0px;
   padding: 0px;
@@ -12,31 +21,102 @@
   justify-content: space-between;
   align-items: center;
 }
-.partner__img {
-  object-fit: contain;
-  object-position: center;
-  width: 190px;
-  pointer-events: none;
+.partner__item {
   user-select: none;
+  transition: .3s ease-in-out;
+}
+.partner__item:hover {
+  transform: scale(1.05);
+}
+
+.partner__item_type_mintrans {
+  background-image: url('../../images/partners/logo-min-white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 332px;
+  height: 100px;
+}
+
+.partner__item_type_rosdornii {
+  background-image: url('../../images/partners/logo-ros-white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 266px;
+  height: 100px;
+}
+
+.partner__item_type_rzd {
+  background-image: url('../../images/partners/logo-rzd-white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 503px;
+  height: 100px;
+}
+
+.partner__item_type_mintrans:hover {
+  background-image: url('../../images/partners/logo-min-color.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.partner__item_type_rosdornii:hover {
+  background-image: url('../../images/partners/logo-ros-color.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.partner__item_type_rzd:hover {
+  background-image: url('../../images/partners/logo-rzd-color.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media all and (max-width: 1400px) {
+  .partner__item_type_mintrans {
+    width: 266px;
+    height: 80px;
+  }
+  
+  .partner__item_type_rosdornii {
+    width: 213px;
+    height: 80px;
+  }
+  
+  .partner__item_type_rzd {
+    width: 520px;
+    height: 80px;
+  }
 }
 
 @media all and (max-width: 1000px) {
   .partner {
     padding: 20px 0px 0px 0px;
   }
-  .partner__img {
-    width: 140px;
+}
+
+@media all and (max-width: 1100px) {
+  .partner__list {
+    margin: 20px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+  }
+  .partner__item {
+    margin-bottom: 30px;
   }
 }
 
 @media all and (max-width: 760px) {
-  .partner__list {
-    margin: 20px 0px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .partner__img {
-    width: 200px;
-    margin-bottom: 30px;
+  .partner__title {
+    margin: 20px auto;
+    max-width: 360px;
+    font-size: 24px;
+    line-height: 1.15;
   }
 }
