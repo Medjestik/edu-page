@@ -9,6 +9,7 @@ import Advantages from '../Advantages/Advantages.js';
 import Programs from '../Programs/Programs.js';
 import Subscribe from '../Subscribe/Subscribe.js';
 import Education from '../Education/Education.js';
+import TrialEducation from '../TrialEducation/TrialEducation.js';
 import Testimonials from '../Testimonials/Testimonials.js';
 import Partner from '../Partner/Partner.js';
 import Request from '../Request/Request.js';
@@ -161,6 +162,7 @@ function App() {
         onClickButton={openRequestPopup}  
       />
       <Education />
+      <TrialEducation />
       <Testimonials
         windowWidth={windowWidth}
       />

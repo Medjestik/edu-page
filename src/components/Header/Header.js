@@ -23,9 +23,9 @@ function Header({ windowWidth, setWindowWidth }) {
         <li className="header__link"><Link to="advantages" smooth={true} offset={0} duration= {1000}>Преимущества</Link></li>
         <li className="header__link"><Link to="programs" smooth={true} offset={0} duration= {1500}>Программы</Link></li>
         <li className="header__link"><Link to="education" smooth={true} offset={0} duration= {2000}>Обучение</Link></li>
-        <li className="header__link"><Link to="footer" smooth={true} offset={0} duration= {2500}>Контакты</Link></li>
       </ul>
-      <a className="header__button" href="http://edu.emiit.ru/" target="_blank" rel="noreferrer">Образовательный портал</a>
+      <span className="header__phone">+7(916)333-13-11</span>
+      <a className="header__button" href="http://edu.emiit.ru/" target="_blank" rel="noreferrer">Учебный портал</a>
     </>
   )
 
@@ -49,9 +49,8 @@ function Header({ windowWidth, setWindowWidth }) {
             <li className="mobile__link"><Link to="advantages" smooth={true} offset={0} duration= {1000} onClick={() => setShowMenu(false)}>Преимущества</Link></li>
             <li className="mobile__link"><Link to="programs" smooth={true} offset={0} duration= {1500} onClick={() => setShowMenu(false)}>Программы</Link></li>
             <li className="mobile__link"><Link to="education" smooth={true} offset={0} duration= {2000} onClick={() => setShowMenu(false)}>Обучение</Link></li>
-            <li className="mobile__link"><Link to="footer" smooth={true} offset={0} duration= {2500} onClick={() => setShowMenu(false)}>Контакты</Link></li>
           </ul>
-          <a className="mobile__link-button" href="http://edu.emiit.ru/" target="_blank" rel="noreferrer">Образовательный портал</a>
+          <a className="mobile__link-button" href="http://edu.emiit.ru/" target="_blank" rel="noreferrer">Учебный портал</a>
           <span className="mobile-menu__info">priem@edu.emiit.ru</span>
           <span className="mobile-menu__info">+7 (916) 333-13-11</span>
           <span className="mobile-menu__info">Москва, Новосущевская&nbsp;22 стр.&nbsp;2, аудитория&nbsp;3213</span>
@@ -73,6 +72,7 @@ function Header({ windowWidth, setWindowWidth }) {
       return (
         <nav className="header__nav">
           <img className="header__logo" src={logoColor} alt="logo"></img>
+          <span className="header__phone">+7(916)333-13-11</span>
           <button className={`header__hamburger-button ${showMenu ? 'header__hamburger-button_type_show' : ''}`} type="button" onClick={() => setShowMenu(true)}></button>
           {mobileMenu}
         </nav>

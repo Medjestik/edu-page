@@ -318,7 +318,7 @@
 
 @media all and (max-width: 760px) {
   .detail {
-    margin: 7vh auto 0px;
+    margin: 3vh auto 0px;
     max-height: 90vh;
   }
   .detail__popup {
@@ -358,8 +358,8 @@
     width: 100%;
   }
   .detail__close-button {
-    width: 25px;
-    height: 25px;
-    top: -35px;
+    right: 10px;
+    top: 15px;
+    z-index: 20;
   }
 }

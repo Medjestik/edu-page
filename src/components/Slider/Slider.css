@@ -30,6 +30,7 @@
 .slider__person-info {
   display: flex;
   flex-direction: column;
+  margin-right: 5px;
 }
 .slider__person-name {
   margin: 0px;
@@ -204,5 +205,12 @@
     margin: 15px 0px 0px 0px;
     font-size: 14px;
     line-height: 1.4;
+  }
+  .slider__person-rating {
+    padding-right: 15px;
+  }
+  .slider__person-rating::after {
+    width: 14px;
+    height: 14px;
   }
 }

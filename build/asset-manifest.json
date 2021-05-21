@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.976f81fd.chunk.css",
-    "main.js": "./static/js/main.1262575c.chunk.js",
-    "main.js.map": "./static/js/main.1262575c.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.2a8c22b8.js",
-    "runtime-main.js.map": "./static/js/runtime-main.2a8c22b8.js.map",
-    "static/js/2.ed573036.chunk.js": "./static/js/2.ed573036.chunk.js",
-    "static/js/2.ed573036.chunk.js.map": "./static/js/2.ed573036.chunk.js.map",
-    "static/js/3.a3bfb75f.chunk.js": "./static/js/3.a3bfb75f.chunk.js",
-    "static/js/3.a3bfb75f.chunk.js.map": "./static/js/3.a3bfb75f.chunk.js.map",
+    "main.css": "./static/css/main.42409803.chunk.css",
+    "main.js": "./static/js/main.008d6170.chunk.js",
+    "main.js.map": "./static/js/main.008d6170.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.bcde8932.js",
+    "runtime-main.js.map": "./static/js/runtime-main.bcde8932.js.map",
+    "static/js/2.5df95dfd.chunk.js": "./static/js/2.5df95dfd.chunk.js",
+    "static/js/2.5df95dfd.chunk.js.map": "./static/js/2.5df95dfd.chunk.js.map",
+    "static/js/3.a2322508.chunk.js": "./static/js/3.a2322508.chunk.js",
+    "static/js/3.a2322508.chunk.js.map": "./static/js/3.a2322508.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.976f81fd.chunk.css.map": "./static/css/main.976f81fd.chunk.css.map",
-    "static/js/2.ed573036.chunk.js.LICENSE.txt": "./static/js/2.ed573036.chunk.js.LICENSE.txt",
+    "static/css/main.42409803.chunk.css.map": "./static/css/main.42409803.chunk.css.map",
+    "static/js/2.5df95dfd.chunk.js.LICENSE.txt": "./static/js/2.5df95dfd.chunk.js.LICENSE.txt",
     "static/media/1.c450aeae.jpg": "./static/media/1.c450aeae.jpg",
     "static/media/2.ed48943e.jpg": "./static/media/2.ed48943e.jpg",
     "static/media/3.2e82efe9.jpg": "./static/media/3.2e82efe9.jpg",
@@ -33,7 +33,7 @@
     "static/media/graph.2d6ea445.png": "./static/media/graph.2d6ea445.png",
     "static/media/instagram.24077277.png": "./static/media/instagram.24077277.png",
     "static/media/introduction.86fae3c0.gif": "./static/media/introduction.86fae3c0.gif",
-    "static/media/Partner.css": "./static/media/logo-rzd-white.02817973.png",
+    "static/media/Partner.css": "./static/media/logo-rzd-white.f22c5eee.png",
     "static/media/logo-rut-color.65493b27.png": "./static/media/logo-rut-color.65493b27.png",
     "static/media/logo-rut-white.e4835e80.png": "./static/media/logo-rut-white.e4835e80.png",
     "static/media/payment.e53b3523.png": "./static/media/payment.e53b3523.png",
@@ -41,13 +41,14 @@
     "static/media/request.95620171.png": "./static/media/request.95620171.png",
     "static/media/send.d24db45b.png": "./static/media/send.d24db45b.png",
     "static/media/teacher-icon.b349021f.png": "./static/media/teacher-icon.b349021f.png",
+    "static/media/trial-education.686c4151.png": "./static/media/trial-education.686c4151.png",
     "static/media/vk.4369913d.png": "./static/media/vk.4369913d.png",
     "static/media/youtube.a606353d.png": "./static/media/youtube.a606353d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2a8c22b8.js",
-    "static/js/2.ed573036.chunk.js",
-    "static/css/main.976f81fd.chunk.css",
-    "static/js/main.1262575c.chunk.js"
+    "static/js/runtime-main.bcde8932.js",
+    "static/js/2.5df95dfd.chunk.js",
+    "static/css/main.42409803.chunk.css",
+    "static/js/main.008d6170.chunk.js"
   ]
 }

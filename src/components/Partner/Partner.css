@@ -28,7 +28,6 @@
 .partner__item:hover {
   transform: scale(1.05);
 }
-
 .partner__item_type_mintrans {
   background-image: url('../../images/partners/logo-min-white.png');
   background-repeat: no-repeat;
@@ -37,7 +36,6 @@
   width: 332px;
   height: 100px;
 }
-
 .partner__item_type_rosdornii {
   background-image: url('../../images/partners/logo-ros-white.png');
   background-repeat: no-repeat;
@@ -46,7 +44,6 @@
   width: 266px;
   height: 100px;
 }
-
 .partner__item_type_rzd {
   background-image: url('../../images/partners/logo-rzd-white.png');
   background-repeat: no-repeat;
@@ -55,21 +52,18 @@
   width: 503px;
   height: 100px;
 }
-
 .partner__item_type_mintrans:hover {
   background-image: url('../../images/partners/logo-min-color.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
-
 .partner__item_type_rosdornii:hover {
   background-image: url('../../images/partners/logo-ros-color.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
-
 .partner__item_type_rzd:hover {
   background-image: url('../../images/partners/logo-rzd-color.png');
   background-repeat: no-repeat;
@@ -82,12 +76,10 @@
     width: 266px;
     height: 80px;
   }
-  
   .partner__item_type_rosdornii {
     width: 213px;
     height: 80px;
   }
-  
   .partner__item_type_rzd {
     width: 520px;
     height: 80px;
@@ -105,7 +97,7 @@
     margin: 20px auto;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 700px;
+    max-width: 400px;
   }
   .partner__item {
     margin-bottom: 30px;
@@ -118,5 +110,9 @@
     max-width: 360px;
     font-size: 24px;
     line-height: 1.15;
+  }
+  .partner__item_type_rzd {
+    width: 300px;
+    height: 60px;
   }
 }

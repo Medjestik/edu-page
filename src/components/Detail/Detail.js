@@ -105,7 +105,7 @@ function Popup({ program, isOpen, onClose, sendRequest, loadingRequest, windowWi
             <div className="detail__container">
               <div className="detail__description">
 
-                <p className="detail__specialization">Профиль</p>
+                <p className="detail__specialization">{program.level === 'mag' ? 'Программа' : 'Профиль'}</p>
                 <h2 
                 className={`detail__title ${program.name.length > 32 ? "detail__title_type_large" : "detail__title_type_small"}`}>
                   {program.name}
