@@ -1,3 +1,1 @@
 User-agent: *
-
-Sitemap: http://emiit.ru/sitemap.xml
