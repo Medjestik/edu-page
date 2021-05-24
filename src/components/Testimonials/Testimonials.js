@@ -7,7 +7,7 @@ import thirdImg from '../../images/testimonials/3.jpg';
 import fourthImg from '../../images/thirdImg.png';
 import fifthImg from '../../images/testimonials/5.jpg';
 import sixthImg from '../../images/firstImg.png';
-import seventhImg from '../../images/testimonials/7.png';
+import seventhImg from '../../images/testimonials/7.jpg';
 
 const testimonials = [
   {id: 1, name: 'Эргашев Бекзод', town: 'Магистр, 1й-курс', rating: 5, text: 'Интересная форма обучения, много видеоматериалов с разъяснениями, а также вебинаров по сопутствующим тематикам. Структурированное расписание с чёткими сроками. Есть кураторы, которые активизируют и мотивируют учиться, следят за успеваемостью, в любой момент можно задать и решить любой вопрос.', image: firstImg},
