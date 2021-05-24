@@ -60,7 +60,7 @@ function Request({ sendRequest, loadingRequest }) {
                   className="request__form-input"
                   placeholder="Имя"
                   type="text"
-                  id="name"
+                  id="name-popup"
                   name="name"
                   value={name}
                   onChange={handleChangeName}
@@ -73,7 +73,7 @@ function Request({ sendRequest, loadingRequest }) {
                   className="request__form-input"
                   placeholder="Номер телефона"
                   type="tel"
-                  id="telephone"
+                  id="telephone-popup"
                   name="telephone"
                   value={phone}
                   onChange={handleChangePhone}
@@ -84,7 +84,7 @@ function Request({ sendRequest, loadingRequest }) {
                 className="request__form-input"
                 placeholder="Время для звонка или комментарий"
                 type="text"
-                id="comment"
+                id="comment-popup"
                 name="comment"
                 value={comment}
                 onChange={handleChangeComment}

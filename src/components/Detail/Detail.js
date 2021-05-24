@@ -131,7 +131,7 @@ function Popup({ program, isOpen, onClose, sendRequest, loadingRequest, windowWi
                   className="detail__form-input"
                   placeholder="Имя"
                   type="text"
-                  id="name"
+                  id="name-detail"
                   name="name"
                   value={name}
                   onChange={handleChangeName}
@@ -144,7 +144,7 @@ function Popup({ program, isOpen, onClose, sendRequest, loadingRequest, windowWi
                   className="detail__form-input"
                   placeholder="Номер телефона"
                   type="tel"
-                  id="telephone"
+                  id="telephone-detail"
                   name="telephone"
                   value={phone}
                   onChange={handleChangePhone}
