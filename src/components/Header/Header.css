@@ -216,6 +216,7 @@
   color: var(--white-color);
   text-align: center;
   margin-bottom: 15px;
+  text-decoration: none;
 }
 .mobile__wave {
   position: absolute;

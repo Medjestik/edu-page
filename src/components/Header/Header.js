@@ -56,7 +56,7 @@ function Header({ windowWidth, setWindowWidth, onClickButton }) {
           </ul>
           <button className="mobile__link-button" type="button" onClick={onRequest}>Оставить заявку</button>
           <span className="mobile-menu__info">priem@edu.emiit.ru</span>
-          <span className="mobile-menu__info">+7 (916) 333-13-11</span>
+          <a className="mobile-menu__info" href="tel:+79163331311">+7(916)333-13-11</a>
           <span className="mobile-menu__info">Москва, Новосущевская&nbsp;22 стр.&nbsp;2, аудитория&nbsp;3213</span>
         </div>
       </div>
@@ -76,7 +76,7 @@ function Header({ windowWidth, setWindowWidth, onClickButton }) {
       return (
         <nav className="header__nav">
           <img className="header__logo" src={logoColor} alt="logo"></img>
-          <span className="header__phone">+7(916)333-13-11</span>
+          <a className="header__phone" href="tel:+79163331311">+7(916)333-13-11</a>
           <button className={`header__hamburger-button ${showMenu ? 'header__hamburger-button_type_show' : ''}`} type="button" onClick={() => setShowMenu(true)}></button>
           {mobileMenu}
         </nav>
