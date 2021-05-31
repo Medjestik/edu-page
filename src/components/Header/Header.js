@@ -4,9 +4,14 @@ import { Link } from "react-scroll";
 import logoColor from '../../images/logo-rut-color.png';
 import logoWhite from '../../images/logo-rut-white.png';
 
-function Header({ windowWidth, setWindowWidth }) {
+function Header({ windowWidth, setWindowWidth, onClickButton }) {
 
   const [showMenu, setShowMenu] = React.useState(false);
+
+  function onRequest () {
+    setShowMenu(false);
+    onClickButton();
+  }
 
   React.useEffect(() => {
     setWindowWidth(window.innerWidth);
@@ -24,8 +29,7 @@ function Header({ windowWidth, setWindowWidth }) {
         <li className="header__link"><Link to="programs" smooth={true} offset={0} duration= {1500}>Программы</Link></li>
         <li className="header__link"><Link to="education" smooth={true} offset={0} duration= {2000}>Обучение</Link></li>
       </ul>
-      <span className="header__phone">+7(916)333-13-11</span>
-      <a className="header__button" href="http://edu.emiit.ru/" target="_blank" rel="noreferrer">Учебный портал</a>
+      <a className="header__phone" href="tel:+79163331311">+7(916)333-13-11</a>
     </>
   )
 
@@ -50,7 +54,7 @@ function Header({ windowWidth, setWindowWidth }) {
             <li className="mobile__link"><Link to="programs" smooth={true} offset={0} duration= {1500} onClick={() => setShowMenu(false)}>Программы</Link></li>
             <li className="mobile__link"><Link to="education" smooth={true} offset={0} duration= {2000} onClick={() => setShowMenu(false)}>Обучение</Link></li>
           </ul>
-          <a className="mobile__link-button" href="http://edu.emiit.ru/" target="_blank" rel="noreferrer">Учебный портал</a>
+          <button className="mobile__link-button" type="button" onClick={onRequest}>Оставить заявку</button>
           <span className="mobile-menu__info">priem@edu.emiit.ru</span>
           <span className="mobile-menu__info">+7 (916) 333-13-11</span>
           <span className="mobile-menu__info">Москва, Новосущевская&nbsp;22 стр.&nbsp;2, аудитория&nbsp;3213</span>

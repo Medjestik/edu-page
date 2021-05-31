@@ -45,7 +45,7 @@ function Footer() {
               <ul className="footer__column-links">
                 <li className="footer__column-item"><a className="footer__column-link" href="https://miit-ief.ru/" target="_blank" rel="noreferrer">Институт экономики и финансов</a></li>
                 <li className="footer__column-item"><a className="footer__column-link" href="https://www.miit.ru/" target="_blank" rel="noreferrer">РУТ (МИИТ)</a></li>
-                <li className="footer__column-item"><a className="footer__column-link" href="http://edu.emiit.ru/" target="_blank" rel="noreferrer">Образовательный портал</a></li>
+                <li className="footer__column-item"><a className="footer__column-link" href="http://edu.emiit.ru/" target="_blank" rel="noreferrer">Учебный портал</a></li>
               </ul>
             </li>
             <li className="footer__column">

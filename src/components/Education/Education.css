@@ -1,6 +1,6 @@
 .education {
   margin: 0px auto 0px;
-  padding: 60px 0px 100px 0px;
+  padding: 100px 0px 100px 0px;
   width: 100%;
 }
 .education__container {
@@ -54,7 +54,7 @@
 
 @media all and (max-width: 1250px) {
   .education {
-    padding: 40px 0px 40px 0px;
+    padding: 80px 0px 40px 0px;
   }
   .education__img {
     margin: -120px 0px 0px 120px;
@@ -77,7 +77,7 @@
 
 @media all and (max-width: 1000px) {
   .education {
-    padding: 20px 0px 0px 0px;
+    padding: 60px 0px 0px 0px;
   }
   .education__info {
     max-width: 450px;
@@ -97,7 +97,7 @@
 
 @media all and (max-width: 850px) {
   .education {
-    padding: 0px;
+    padding: 40px 0px 0px 0px;
   }
   .education__info {
     max-width: 350px;
@@ -107,10 +107,10 @@
 
 @media all and (max-width: 760px) {
   .education {
-    padding: 20px 0px 0px 0px;
+    padding: 80px 0px 0px 0px;
   }
   .education__container {
-    margin-top: 70px;
+    margin-top: 50px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;

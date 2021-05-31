@@ -140,6 +140,7 @@ function App() {
       <Header
         windowWidth={windowWidth}
         setWindowWidth={setWindowWidth}
+        onClickButton={openRequestPopup}
       />
       <Introduction  
         onClickButton={openRequestPopup}

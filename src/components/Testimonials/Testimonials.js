@@ -6,7 +6,7 @@ import secondImg from '../../images/testimonials/2.jpg';
 import thirdImg from '../../images/testimonials/3.jpg';
 import fourthImg from '../../images/thirdImg.png';
 import fifthImg from '../../images/testimonials/5.jpg';
-import sixthImg from '../../images/firstImg.png';
+import sixthImg from '../../images/testimonials/6.jpg';
 import seventhImg from '../../images/testimonials/7.jpg';
 
 const testimonials = [
