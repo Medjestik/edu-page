@@ -158,7 +158,7 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms }) {
         <div className="programs__container">
           <h2 className="programs__title">Программы обучения</h2>
           <nav className="programs__nav">
-            <ul className="programs__menu">
+            <ul className="programs__menu" >
               <li className="programs__menu-item">
                 <button 
                   className={`programs__menu-button ${activeMenuButton.all ? "programs__menu-button_type_active" :""}`} id="all" type="button"
@@ -196,7 +196,7 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms }) {
               </li>
             </ul>
 
-            <form className="programs__search" name="search-programs" action="#" noValidate onSubmit={searchProgram}>
+            <form className="programs__search" name="search-programs" action="#" noValidate onSubmit={searchProgram} ref={viewRef}>
               <input 
               className="programs__search-input"
               onChange={(e) => changeInput(e)}
@@ -216,7 +216,7 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms }) {
           </nav>
 
 
-          <ul className="programs__item-container" ref={viewRef}>
+          <ul className="programs__item-container">
             { isLoadingPrograms 
             ?
               <Preloader />
