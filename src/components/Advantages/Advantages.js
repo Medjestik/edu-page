@@ -21,7 +21,7 @@ function Advantages() {
           </li>
           <li className="advantages__item">
             <img className="advantages__item-img" src={discount} alt="free"></img>
-            <h3 className="advantages__item-title">Дешевле на 30% при&nbsp;очно-заочной форме&nbsp;обучения</h3>
+            <h3 className="advantages__item-title">Дешевле на 50% при&nbsp;очно-заочной форме&nbsp;обучения</h3>
           </li>
           <li className="advantages__item">
             <img className="advantages__item-img" src={payment} alt="free"></img>
