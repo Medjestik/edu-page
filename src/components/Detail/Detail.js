@@ -19,6 +19,22 @@ const directionOfProgram = (type) => {
   return 'Не определено'
 }
 
+const analyticsOfProgram = (type) => {
+  if (type === 'economic') {
+    return window.ym(65286603,'reachGoal','otpravil_formu_ekomonika');
+  }
+  if (type === 'inform') {
+    return window.ym(65286603,'reachGoal','otpravil_formu_biznes');
+  }
+  if (type === 'management') {
+    return window.ym(65286603,'reachGoal','otpravil_formu_menedzment');
+  }
+  if (type === 'personal') {
+    return window.ym(65286603,'reachGoal','otpravil_formu_upr_personal');
+  }
+  return false;
+}
+
 const levelOfStudy = (level) => {
   if (level === 'bak') {
     return 'Бакалавриат'
@@ -68,7 +84,11 @@ function Popup({ program, isOpen, onClose, sendRequest, loadingRequest, windowWi
 
   function handleSubmit(e) {
     e.preventDefault();
-    sendRequest({ fullname: name, phone: phone, text: '' })
+    sendRequest({ fullname: name, phone: phone, text: '' });
+    window.gtag('event', 'otpravil_formu_programm', {
+      'event_category': 'otpravil_formu_programm',
+    });
+    analyticsOfProgram(program.direction);
   }
 
   function handleKeyDown(event) {

@@ -12,7 +12,11 @@ function RequestPopup({ isOpen, sendRequest, loadingRequest, windowWidth }) {
  
   function handleSubmit(e) {
     e.preventDefault();
-    sendRequest({ fullname: name + ' ' + surname, phone: phone, text: comment, })
+    sendRequest({ fullname: name + ' ' + surname, phone: phone, text: comment, });
+    window.ym(65286603,'reachGoal','otpravil_formu');
+    window.gtag('event', 'otpravil_formu', {
+     'event_category': 'otpravil_formu',
+    });
   }
 
   function handleChangeName(e) {

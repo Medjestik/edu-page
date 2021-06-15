@@ -25,6 +25,10 @@ function Request({ sendRequest, loadingRequest }) {
   function handleSubmit(e) {
     e.preventDefault();
     sendRequest({ fullname: name, phone: phone, text: comment, })
+    window.ym(65286603,'reachGoal','otpravil_formu_podval');
+    window.gtag('event', 'otpravil_formu', {
+     'event_category': 'otpravil_formu',
+    });
   }
 
   function handleKeyDown(event) {
