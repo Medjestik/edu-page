@@ -19,6 +19,30 @@ const directionOfProgram = (type) => {
   return 'Не определено'
 }
 
+const countDiscount = (level, form) => {
+  if (level === "bak" && form === "o") {
+    return (
+      <div className="detail__discount">
+        <p className="detail__discount-description"><span className="detail__discount-description_weight_bold">Скидка на&nbsp;обучение:</span> в&nbsp;нашем университете предоставляется скидка на&nbsp;весь период обучения для&nbsp;абитуриентов поступающих на&nbsp;бакалавриат очной формы обучения. Скидка зависит от&nbsp;среднего балла по&nbsp;ЕГЭ.</p>
+        <ul className="detail__discount-list">
+          <li className="detail__discount-item">
+            <span className="detail__discount-percent">-15%</span>
+            <p className="detail__discount-text">для&nbsp;абитуриентов со&nbsp;средним баллом от&nbsp;65 баллов до&nbsp;70 баллов</p>
+          </li>
+          <li className="detail__discount-item">
+            <span className="detail__discount-percent">-20%</span>
+            <p className="detail__discount-text">для&nbsp;абитуриентов со&nbsp;средним баллом от&nbsp;70 баллов до&nbsp;75 баллов</p>
+          </li>
+          <li className="detail__discount-item">
+            <span className="detail__discount-percent">-25%</span>
+            <p className="detail__discount-text">для&nbsp;абитуриентов со&nbsp;средним баллом от&nbsp;75 баллов и&nbsp;выше</p>
+          </li>
+        </ul>
+      </div>
+    )
+  }
+}
+
 const analyticsOfProgram = (type) => {
   if (type === 'economic') {
     return window.ym(65286603,'reachGoal','otpravil_formu_ekomonika');
@@ -181,6 +205,9 @@ function Popup({ program, isOpen, onClose, sendRequest, loadingRequest, windowWi
             {
               program.description &&
               <p className="detail__program-description"><span className="detail__program-description_weight_bold">Цели обучения: </span>{program.description}</p>
+            }
+            {
+              countDiscount(program.level, program.form)
             }
             {
               program.courses && 

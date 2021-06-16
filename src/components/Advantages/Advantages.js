@@ -13,7 +13,7 @@ function Advantages() {
 
       <div className="container">
         <h2 className="advantages__title">Преимущества</h2>
-        <p className="advantages__subtitle">при обучение с использованием дистанционных образовательных технологий</p>
+        <p className="advantages__subtitle">при обучении с использованием дистанционных образовательных технологий</p>
         <ul className="advantages__list">
           <li className="advantages__item">
             <img className="advantages__item-img" src={diploma} alt="free"></img>

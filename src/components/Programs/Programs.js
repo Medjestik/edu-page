@@ -43,6 +43,18 @@ const formOfStudy = (form) => {
   return 'Очная'
 }
 
+const countDiscount = (level, form) => {
+  if (level === "bak" && form === "o") {
+    return (
+      <ul className="programs__discount-list">
+        <li className="programs__discount-item">-15%</li>
+        <li className="programs__discount-item">-20%</li>
+        <li className="programs__discount-item">-25%</li>
+      </ul>
+    )
+  }
+}
+
 function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms }) {
 
   smoothscroll.polyfill();
@@ -139,6 +151,7 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms }) {
     })
   }
 
+
   function detailProgram(program) {
     onDetail(program);
     showDetailPopup();
@@ -224,6 +237,7 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms }) {
               samplePrograms.slice(0, countPrograms).map((elem) => (
                 <li className="programs__item" key={elem.id}>
                   <div className="programs__item-top">
+                    {countDiscount(elem.level, elem.form)}
                     <div className="programs__item-description">
                       <span className="programs__item-tag">{directionOfProgram(elem.direction)}</span>
                       <p className="programs__item-name">{elem.name}</p>
@@ -236,7 +250,6 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms }) {
                       <span className="programs__item-time">{timeOfStudy(elem)}</span>
                     </div>
                     <button className="programs__button-bottom" type="button" onClick={() => detailProgram(elem)}>Подробнее</button>
-
                   </div>
                 </li>
               ))
