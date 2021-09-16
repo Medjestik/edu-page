@@ -51,7 +51,7 @@ function Footer() {
               <h4 className="footer__column-title">Контакты</h4>
               <ul className="footer__column-links">
                 <li className="footer__column-item">priem@edu.emiit.ru</li>
-                <li className="footer__column-item">+7 (499) 455-86-38</li>
+                <li className="footer__column-item">+7 (916) 333-13-11</li>
               </ul>
             </li>
           </ul>
