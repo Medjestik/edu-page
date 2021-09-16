@@ -72,24 +72,24 @@ const levelOfStudy = (level) => {
 const timeOfStudy = (program) => {
   if (program.level === 'bak') {
     if (program.form === 'oz') {
-      return '5 лет'
+      return '5 лет';
     }
-    return '4 года'
+    return '4 года';
   }
   if (program.level === 'mag') {
     if (program.form === 'oz') {
-      return '2 года и 3 месяца'
+      return '2 года и 3 месяца';
     }
-    return '2 года'
+    return '2 года';
   } 
-  return 'Не определено'
+  return 'Не определено';
 }
 
 const formOfStudy = (form) => {
   if (form === 'oz') {
-    return 'Очно-заочная'
+    return 'Очно-заочная';
   }
-  return 'Очная'
+  return 'Очная';
 }
 
 function Popup({ program, isOpen, onClose, sendRequest, loadingRequest, windowWidth, onClickButton }) {

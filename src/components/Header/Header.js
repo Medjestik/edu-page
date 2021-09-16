@@ -10,7 +10,7 @@ function Header({ windowWidth, setWindowWidth, onClickButton }) {
 
   function onRequest () {
     setShowMenu(false);
-    onClickButton()
+    onClickButton();
   }
 
   React.useEffect(() => {
