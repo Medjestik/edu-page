@@ -17,6 +17,9 @@ const directionOfProgram = (type) => {
   if (type === 'personal') {
     return 'Управление персоналом'
   }
+  if (type === 'program') {
+    return 'Прикладная информатика'
+  }
   return 'Не определено'
 }
 

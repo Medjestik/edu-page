@@ -9,7 +9,7 @@ function handleResponse (res) {
 }
 
 export const eduRequest = ({ fullname, phone, text }) => {
-    return fetch(`${API_URL}/dot_requests/store`, {
+    return fetch(`${API_URL}/action/store_dot_request`, {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -21,8 +21,8 @@ export const eduRequest = ({ fullname, phone, text }) => {
 };
 
 export const getPrograms = () => {
-  return fetch(`${API_URL}/dot_profiles/get_all`, {
-    method: 'POST',
+  return fetch(`${API_URL}/action/dot_profiles`, {
+    method: 'GET',
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'

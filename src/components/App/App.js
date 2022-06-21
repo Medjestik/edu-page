@@ -99,9 +99,11 @@ function App() {
     setIsLoadingPrograms(true);
     api.getPrograms()
     .then((res) => {
-      res.map((item) => {
-        return item.name = item.name.replaceAll('&nbsp;', '\u00A0');
-      })
+      if (res) {
+        res.map((item) => {
+          return item.name = item.name.replaceAll('&nbsp;', '\u00A0');
+        })
+      }
       setPrograms(res);
     })
     .catch((err) => {

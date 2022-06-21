@@ -33,7 +33,7 @@ function Footer() {
             <li className="footer__column">
               <h4 className="footer__column-title">Навигация</h4>
               <ul className="footer__column-links">
-                <li className="footer__column-item"><Link className="footer__column-link" to="main" smooth={true} offset={0} duration= {2500}>Главная</Link></li>
+                <li className="footer__column-item"><Link className="footer__column-link" to="introduction" smooth={true} offset={0} duration= {2500}>Главная</Link></li>
                 <li className="footer__column-item"><Link className="footer__column-link" to="about" smooth={true} offset={0} duration= {2000}>О нас</Link></li>
                 <li className="footer__column-item"><Link className="footer__column-link" to="advantages" smooth={true} offset={0} duration= {1500}>Преимущества</Link></li>
                 <li className="footer__column-item"><Link className="footer__column-link" to="programs" smooth={true} offset={0} duration= {1000}>Программы</Link></li>
