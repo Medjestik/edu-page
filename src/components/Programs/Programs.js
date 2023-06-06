@@ -46,7 +46,7 @@ const formOfStudy = (form) => {
   return 'Очная'
 }
 
-const countDiscount = (level, form) => {
+const countDiscount = (level, form) => { 
   if (level === "bak" && form === "o") {
     return (
       <ul className="programs__discount-list">
@@ -59,6 +59,8 @@ const countDiscount = (level, form) => {
 }
 
 function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms }) {
+
+  console.log(programs);
 
   smoothscroll.polyfill();
 
@@ -254,6 +256,10 @@ function Programs({ programs, onDetail, showDetailPopup, isLoadingPrograms }) {
                     </div>
                     <button className="programs__button-bottom" type="button" onClick={() => detailProgram(elem)}>Подробнее</button>
                   </div>
+                  {
+                    elem.video_link &&
+                    <a className="programs__video-link" href={elem.video_link} target="_blank" rel="noreferrer"> </a>
+                  }
                 </li>
               ))
             }

@@ -121,15 +121,16 @@
 }
 .programs__discount-list {
   display: flex;
+  flex-direction: column;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
   position: absolute;
-  top: 20px;
-  right: 40px;
+  top: 100px;
+  right: -5px;
 }
 .programs__discount-item {
-  margin: 0px 7px 0px 0px;
+  margin: 0px 0px 5px 0px;
   background-color: var(--main-color);
   color: var(--white-color);
   box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
@@ -139,16 +140,42 @@
   border-radius: 3px;
   font-size: 16px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 18px;
   font-style: normal;
   text-align: center;
   outline: none;
   position: relative;
   pointer-events: none;
   user-select: none;
+  width: 60px;
 }
 .programs__discount-item:last-of-type {
   margin: 0px;
+}
+.programs__video-link {
+  display: flex;
+  margin: 0px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 60px;
+  height: 24px;
+  background-color: var(--secondary-color);
+  background-image: url('../../images/video.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+  box-sizing: border-box;
+  border: none;
+  padding: 3px 10px;
+  border-radius: 3px;
+  outline: none;
+  transition: .3s ease-in-out;
+}
+.programs__video-link:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 .programs__item:hover {
   background-color: var(--secondary-color);
@@ -159,13 +186,16 @@
 }
 .programs__item:hover .programs__item-tag {
   color: var(--white-color);
-  background-color: var(--main-color);;
+  background-color: var(--main-color);
 }
 .programs__item:hover .programs__item-form {
   color: var(--white-color);
 }
 .programs__item:hover .programs__item-time {
   color: var(--white-color);
+}
+.programs__item:hover .programs__video-link {
+  background-color: var(--main-color);
 }
 .programs__item-top {
   margin: 0px;
@@ -572,17 +602,6 @@
   .programs__item {
     width: 288px;
   }
-  .programs__discount-list {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 140px;
-    left: 0px;
-  }
-  .programs__discount-item {
-    margin: 0px 0px 5px 0px;
-    width: min-content;
-  }
   .programs__item-top {
     flex-direction: column;
     padding: 20px 20px 0px 20px;
@@ -622,12 +641,14 @@
     margin: 20px 0px 0px 0px;
   }
   .programs__menu {
-    flex-direction: column;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
   .programs__menu-item {
-    margin: 0px 0px 10px 0px;
+    margin: 0px 5px 10px 5px;
   }
   .programs__search {
     margin-top: 10px;
